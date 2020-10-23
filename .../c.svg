@@ -64,9 +64,9 @@ a    { outline:none; }
    <stop offset="9.4%" stop-color="#ff9900" stop-opacity="0.3"/>
    <stop offset="10.4%" stop-color="#ff9900" stop-opacity="0.3"/>
    <stop offset="12.4%" stop-color="#ff9900" stop-opacity="0"/>
-   <stop offset="19.4%" stop-color="#9999ff" stop-opacity="0"/>
-   <stop offset="21.4%" stop-color="#9999ff" stop-opacity="0.2"/>
-   <stop offset="66.4%" stop-color="#9999ff" stop-opacity="0"/>
+   <stop offset="19.4%" stop-color="#ffffff" stop-opacity="0"/>
+   <stop offset="21.4%" stop-color="#ffffff" stop-opacity="0.2"/>
+   <stop offset="66.4%" stop-color="#ffffff" stop-opacity="0"/>
   </radialGradient>
   <path id="km" class="rule" d="M 10,0 V -10 M 20,0 V -10 M 30,0 V -10 M 40,0 V -10 M 50,0 V -20 M 60,0 V -10 M 70,0 V -10 M 80,0 V -10 M 90,0 V -10 M 100,0 V -30"/>
   <path id="mi" class="rule" d="M 16.1,0 V 10 M 32.2,0 V 10 M 48.3,0 V 10 M 64.4,0 V 10 M 80.5,0 V 20 M 96.6,0 V 10 M 112.7,0 V 10 M 128.8,0 V 10 M 144.9,0 V 10 M 161,0 V 30"/>
