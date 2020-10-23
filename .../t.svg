@@ -7,6 +7,10 @@ body {
 		background: #ff0000;
 }
 
+#text-mono, #text-small, #mb-3, #flex-auto {
+  color: #ffffff;
+}
+
 .cont {
 		width: 600px;
 		position: absolute;
