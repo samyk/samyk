@@ -83,195 +83,99 @@ a    { outline:none; }
   <circle cx="0" cy="0" r="99999" fill="#ffffff" fill-opacity="1"/>
   <g id="vab" class="active vab">
    <ellipse cx="0" cy="0" rx="1000" ry="1000" fill="url(#gradient_vab)"/>
-   <switch>
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Van_Allen_radiation_belt">
-     <switch><text x="-6" y="-109" fill="#cc6600" id="trsvg122-ko" systemLanguage="ko"><tspan id="trsvg1-ko">밴앨런대</tspan><tspan x="-6" y="-86" id="trsvg2-ko">내층</tspan></text><text x="-6" y="-109" fill="#cc6600" id="trsvg122"><tspan id="trsvg1">inner   van</tspan><tspan x="-6" y="-86" id="trsvg2">allen   belt</tspan></text></switch>
-     <switch><text x="80" y="358" fill="#9999cc" id="trsvg123-ko" systemLanguage="ko"><tspan id="trsvg3-ko">밴앨런대</tspan><tspan x="80" y="380" id="trsvg4-ko">외층</tspan></text><text x="80" y="358" fill="#9999cc" id="trsvg123"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text></switch>
+     <text x="-6" y="-109" fill="#cc6600" id="trsvg122"><tspan id="trsvg1">inner   van</tspan><tspan x="-6" y="-86" id="trsvg2">allen   belt</tspan></text>
+     <text x="80" y="358" fill="#9999cc" id="trsvg123"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/Cinturones_de_Van_Allen">
-     <switch><text x="-6" y="-117" fill="#cc6600" id="trsvg124-ko" systemLanguage="ko"><tspan id="trsvg5-ko">밴앨런대</tspan><tspan x="10" y="-94" id="trsvg6-ko">내층</tspan></text><text x="-6" y="-117" fill="#cc6600" id="trsvg124"><tspan id="trsvg5">cinturón   de van</tspan><tspan x="10" y="-94" id="trsvg6">allen   interior</tspan></text></switch>
-     <switch><text x="100" y="358" fill="#9999cc" id="trsvg125-ko" systemLanguage="ko"><tspan id="trsvg7-ko">밴앨런대</tspan><tspan x="100" y="380" id="trsvg8-ko">외층</tspan></text><text x="100" y="358" fill="#9999cc" id="trsvg125"><tspan id="trsvg7">cinturón de van</tspan><tspan x="100" y="380" id="trsvg8">allen exterior</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Ceinture_de Van_Allen">
-     <switch><text x="-6" y="-117" fill="#cc6600" id="trsvg126-ko" systemLanguage="ko"><tspan id="trsvg9-ko">밴앨런대</tspan><tspan x="10" y="-94" id="trsvg10-ko">내층</tspan></text><text x="-6" y="-117" fill="#cc6600" id="trsvg126"><tspan id="trsvg9">ceinture de van</tspan><tspan x="10" y="-94" id="trsvg10">allen intérieure</tspan></text></switch>
-     <switch><text x="100" y="358" fill="#9999cc" id="trsvg127-ko" systemLanguage="ko"><tspan id="trsvg11-ko">밴앨런대</tspan><tspan x="100" y="380" id="trsvg12-ko">외층</tspan></text><text x="100" y="358" fill="#9999cc" id="trsvg127"><tspan id="trsvg11">ceinture de van</tspan><tspan x="100" y="380" id="trsvg12">allen extérieure</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/Van_Allen_radiation_belt">
-     <switch><text x="-6" y="-109" fill="#cc6600" id="trsvg128-ko" systemLanguage="ko"><tspan id="trsvg13-ko">밴앨런대</tspan><tspan x="-6" y="-86" id="trsvg14-ko">내층</tspan></text><text x="-6" y="-109" fill="#cc6600" id="trsvg128"><tspan id="trsvg13">inner   van</tspan><tspan x="-6" y="-86" id="trsvg14">allen   belt</tspan></text></switch>
-     <switch><text x="80" y="358" fill="#9999cc" id="trsvg129-ko" systemLanguage="ko"><tspan id="trsvg15-ko">밴앨런대</tspan><tspan x="80" y="380" id="trsvg16-ko">외층</tspan></text><text x="80" y="358" fill="#9999cc" id="trsvg129"><tspan id="trsvg15">outer van</tspan><tspan x="80" y="380" id="trsvg16">allen belt</tspan></text></switch>
-    </a>
-   </switch>
   </g>
   <g id="grave" class="active" stroke="#cc9999" fill="#cc9999" text-anchor="end">
    <path d="M 0,-425 H 140"/>
    <ellipse cx="0" cy="0" rx="425" ry="425" fill="none"/>
    <g class="rot_gra"><use xlink:href="#satellite" transform="translate(0,-425)"/></g>
-   <switch>
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Graveyard_orbit">
-     <switch><text x="430" y="-400" id="trsvg130-ko" systemLanguage="ko"><tspan id="trsvg17-ko">묘지 궤도</tspan><tspan x="430" y="-366" font-size="28" id="trsvg18-ko">(정지위성궤도+300 km)</tspan></text><text x="430" y="-400" id="trsvg130"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="28" id="trsvg18">(geo+300 km)</tspan></text></switch>
+     <text x="430" y="-400" id="trsvg130"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="28" id="trsvg18">(geo+300 km)</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/%C3%93rbita_cementerio">
-     <switch><text x="430" y="-400" id="trsvg131-ko" systemLanguage="ko"><tspan id="trsvg19-ko">Órbita cementerio</tspan><tspan x="430" y="-366" font-size="28" id="trsvg20-ko">(정지위성궤도+300 km)</tspan></text><text x="430" y="-400" id="trsvg131"><tspan id="trsvg19">Órbita cementerio</tspan><tspan x="430" y="-366" font-size="28" id="trsvg20">(geo+300 km)</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Orbite_de_rebut">
-     <switch><text x="430" y="-400" id="trsvg132-ko" systemLanguage="ko"><tspan id="trsvg21-ko">orbite de rebut</tspan><tspan x="430" y="-366" font-size="28" id="trsvg22-ko">(정지위성궤도+300 km)</tspan></text><text x="430" y="-400" id="trsvg132"><tspan id="trsvg21">orbite de rebut</tspan><tspan x="430" y="-366" font-size="28" id="trsvg22">(geo+300 km)</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/Graveyard_orbit">
-     <switch><text x="430" y="-400" id="trsvg133-ko" systemLanguage="ko"><tspan id="trsvg23-ko">묘지 궤도</tspan><tspan x="430" y="-366" font-size="28" id="trsvg24-ko">(정지위성궤도+300 km)</tspan></text><text x="430" y="-400" id="trsvg133"><tspan id="trsvg23">graveyard orbit</tspan><tspan x="430" y="-366" font-size="28" id="trsvg24">(geo+300 km)</tspan></text></switch>
-    </a>
-   </switch>
   </g>
   <g id="geo" class="active" stroke="#666666" fill="#666666" text-anchor="start">
    <path d="M 0,-422 H -170"/>
    <ellipse cx="0" cy="0" rx="422" ry="422" fill="none"/>
    <g class="rot_geo"><use xlink:href="#satellite" transform="translate(0,-422)"/><path d="M 0,0 V -422" stroke-dasharray="1,4"/></g>
-   <switch>
+   
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Geostationary_orbit">
-     <switch><text x="-425" y="-400" id="trsvg134-ko" systemLanguage="ko"><tspan id="trsvg25-ko">정지위성궤도</tspan><tspan x="-425" y="-365" id="trsvg26-ko"> </tspan></text><text x="-425" y="-400" id="trsvg134"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text></switch>
+     <text x="-425" y="-400" id="trsvg134"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/%C3%93rbita_geoestacionaria">
-     <switch><text x="-425" y="-400" id="trsvg135-ko" systemLanguage="ko"><tspan id="trsvg27-ko">정지위성궤도</tspan><tspan x="-425" y="-365" id="trsvg28-ko"> </tspan></text><text x="-425" y="-400" id="trsvg135"><tspan id="trsvg27">Órbita geo-</tspan><tspan x="-425" y="-365" id="trsvg28">estacionaria</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Orbite_g%C3%A9ostationnaire">
-     <switch><text x="-425" y="-400" id="trsvg136-ko" systemLanguage="ko"><tspan id="trsvg29-ko">정지위성궤도</tspan><tspan x="-425" y="-365" id="trsvg30-ko"> </tspan></text><text x="-425" y="-400" id="trsvg136"><tspan id="trsvg29">orbite géo-</tspan><tspan x="-425" y="-365" id="trsvg30">stationnaire</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/Geostationary_orbit">
-     <switch><text x="-425" y="-400" id="trsvg137-ko" systemLanguage="ko"><tspan id="trsvg31-ko">정지위성궤도</tspan><tspan x="-425" y="-365" id="trsvg32-ko"> </tspan></text><text x="-425" y="-400" id="trsvg137"><tspan id="trsvg31">geostationary</tspan><tspan x="-425" y="-365" id="trsvg32">earth orbit</tspan></text></switch>
-    </a>
-   </switch>
+   
   </g>
   <g id="galileo" class="active" stroke="#009999" fill="#009999">
    <path d="M 0,-296 H -145"/>
    <ellipse cx="0" cy="0" rx="296" ry="296" fill="none"/>
    <g class="rot_gal"><use xlink:href="#satellite" transform="translate(0,-296)"/></g>
-   <switch>
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Galileo_(satellite_navigation)">
-     <switch><text x="-145" y="-296" id="trsvg138-ko" systemLanguage="ko"><tspan id="trsvg33-ko">갈릴레오</tspan></text><text x="-145" y="-296" id="trsvg138"><tspan id="trsvg33">galileo</tspan></text></switch>
+     <text x="-145" y="-296" id="trsvg138"><tspan id="trsvg33">galileo</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/Galileo_(navegaci%C3%B3n_por_sat%C3%A9lite)">
-     <switch><text x="-145" y="-296" id="trsvg139-ko" systemLanguage="ko"><tspan id="trsvg34-ko">갈릴레오</tspan></text><text x="-145" y="-296" id="trsvg139"><tspan id="trsvg34">galileo</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Galileo_(syst%C3%A8me_de_positionnement)">
-     <switch><text x="-145" y="-296" id="trsvg140-ko" systemLanguage="ko"><tspan id="trsvg35-ko">갈릴레오</tspan></text><text x="-145" y="-296" id="trsvg140"><tspan id="trsvg35">galileo</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/Galileo_(satellite_navigation)">
-     <switch><text x="-145" y="-296" id="trsvg141-ko" systemLanguage="ko"><tspan id="trsvg36-ko">갈릴레오</tspan></text><text x="-145" y="-296" id="trsvg141"><tspan id="trsvg36">galileo</tspan></text></switch>
-    </a>
-   </switch>
   </g>
   <g id="beidou" class="active" stroke="#cc9900" fill="#cc9900" text-anchor="end">
    <path d="M 0,-276 H 230"/>
    <ellipse cx="0" cy="0" rx="276" ry="276" fill="none"/>
    <g class="rot_com"><use xlink:href="#satellite" transform="translate(0,-276)"/></g>
-   <switch>
+   
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/BeiDou">
-     <switch><text x="430" y="-295" id="trsvg142-ko" systemLanguage="ko"><tspan id="trsvg37-ko">베이더우</tspan><tspan x="430" y="-270" font-size="28" id="trsvg38-ko">중궤도 위성</tspan></text><text x="430" y="-295" id="trsvg142"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg38">meo satellites</tspan></text></switch>
+     <text x="430" y="-295" id="trsvg142"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg38">meo satellites</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/Beidou">
-     <switch><text x="430" y="-295" id="trsvg143-ko" systemLanguage="ko"><tspan id="trsvg39-ko">베이더우</tspan><tspan x="430" y="-270" font-size="28" id="trsvg40-ko">중궤도 위성</tspan></text><text x="430" y="-295" id="trsvg143"><tspan id="trsvg39">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg40">satélites meo</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Beidou">
-     <switch><text x="430" y="-295" id="trsvg144-ko" systemLanguage="ko"><tspan id="trsvg41-ko">베이더우</tspan><tspan x="430" y="-270" font-size="28" id="trsvg42-ko">중궤도 위성</tspan></text><text x="430" y="-295" id="trsvg144"><tspan id="trsvg41">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg42">satellites meo</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/BeiDou">
-     <switch><text x="430" y="-295" id="trsvg145-ko" systemLanguage="ko"><tspan id="trsvg43-ko">베이더우</tspan><tspan x="430" y="-270" font-size="28" id="trsvg44-ko">중궤도 위성</tspan></text><text x="430" y="-295" id="trsvg145"><tspan id="trsvg43">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg44">meo satellites</tspan></text></switch>
-    </a>
-   </switch>
+   
   </g>
   <g id="gps" class="active" stroke="#0000ff" fill="#0000ff">
    <path d="M 0,-266 H -145"/>
    <ellipse cx="0" cy="0" rx="266" ry="266" fill="none"/>
    <g class="rot_gps"><use xlink:href="#satellite" transform="translate(0,-266)"/></g>
-   <switch>
+   
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Global_Positioning_System">
-     <switch><text x="-145" y="-261" id="trsvg146"><tspan id="trsvg45">gps</tspan></text></switch>
+     <text x="-145" y="-261" id="trsvg146"><tspan id="trsvg45">gps</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/GPS">
-     <switch><text x="-145" y="-261" id="trsvg147"><tspan id="trsvg46">gps</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/GPS_(assistant_de_navigation)">
-     <switch><text x="-145" y="-261" id="trsvg148"><tspan id="trsvg47">gps</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/Global_Positioning_System">
-     <switch><text x="-145" y="-261" id="trsvg149"><tspan id="trsvg48">gps</tspan></text></switch>
-    </a>
-   </switch>
+   
   </g>
   <g id="glonass" class="active" stroke="#ff0000" fill="#ff0000" text-anchor="end">
    <path d="M 0,-255 H 230"/>
    <ellipse cx="0" cy="0" rx="255" ry="255" fill="none"/>
    <g class="rot_glo"><use xlink:href="#satellite" transform="translate(0,-255)"/></g>
-   <switch>
+   
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/GLONASS">
-     <switch><text x="430" y="-228" id="trsvg150-ko" systemLanguage="ko"><tspan id="trsvg49-ko">글로나스</tspan></text><text x="430" y="-228" id="trsvg150"><tspan id="trsvg49">glonass</tspan></text></switch>
+     
+     <text x="430" y="-228" id="trsvg150"><tspan id="trsvg49">glonass</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/GLONASS">
-     <switch><text x="430" y="-228" id="trsvg151-ko" systemLanguage="ko"><tspan id="trsvg50-ko">글로나스</tspan></text><text x="430" y="-228" id="trsvg151"><tspan id="trsvg50">glonass</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/GLONASS">
-     <switch><text x="430" y="-228" id="trsvg152-ko" systemLanguage="ko"><tspan id="trsvg51-ko">글로나스</tspan></text><text x="430" y="-228" id="trsvg152"><tspan id="trsvg51">glonass</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/GLONASS">
-     <switch><text x="430" y="-228" id="trsvg153-ko" systemLanguage="ko"><tspan id="trsvg52-ko">글로나스</tspan></text><text x="430" y="-228" id="trsvg153"><tspan id="trsvg52">glonass</tspan></text></switch>
-    </a>
-   </switch>
+   
   </g>
   <g id="iridium" class="active" stroke="#660099" fill="#660099">
    <path d="M 0,-71.8 H -80"/>
    <ellipse cx="0" cy="0" rx="71.8" ry="71.8" fill="none"/>
    <g class="rot_iri"><use xlink:href="#satellite" transform="translate(0,-71.8)"/></g>
-   <switch>
+   
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Iridium_satellite_constellation">
-     <switch><text x="-80" y="-71.8" id="trsvg154-ko" systemLanguage="ko"><tspan id="trsvg53-ko">이리듐</tspan></text><text x="-80" y="-71.8" id="trsvg154"><tspan id="trsvg53">iridium</tspan></text></switch>
+     
+     <text x="-80" y="-71.8" id="trsvg154"><tspan id="trsvg53">iridium</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/Iridium">
-     <switch><text x="-80" y="-71.8" id="trsvg155-ko" systemLanguage="ko"><tspan id="trsvg54-ko">이리듐</tspan></text><text x="-80" y="-71.8" id="trsvg155"><tspan id="trsvg54">iridium</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Iridium_(t%C3%A9l%C3%A9phonie_par_satellite)">
-     <switch><text x="-80" y="-71.8" id="trsvg156-ko" systemLanguage="ko"><tspan id="trsvg55-ko">이리듐</tspan></text><text x="-80" y="-71.8" id="trsvg156"><tspan id="trsvg55">iridium</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/Iridium_satellite_constellation">
-     <switch><text x="-80" y="-71.8" id="trsvg157-ko" systemLanguage="ko"><tspan id="trsvg56-ko">이리듐</tspan></text><text x="-80" y="-71.8" id="trsvg157"><tspan id="trsvg56">iridium</tspan></text></switch>
-    </a>
-   </switch>
+   
   </g>
   <g id="iss" class="active" stroke="#ff00cc" fill="#ff00cc" text-anchor="start">
    <path d="M 0,67.5 H 80"/>
    <ellipse cx="0" cy="0" rx="67.5" ry="67.5" fill="none"/>
    <g class="rot_iss"><use xlink:href="#satellite" transform="translate(0,67.5)"/></g>
-   <switch>
+   
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/International_Space_Station">
-     <switch><text x="80" y="67.5" id="trsvg158-ko" systemLanguage="ko"><tspan id="trsvg57-ko">국제우주정거장</tspan></text><text x="80" y="67.5" id="trsvg158"><tspan id="trsvg57">iss</tspan></text></switch>
+     
+     <text x="80" y="67.5" id="trsvg158"><tspan id="trsvg57">iss</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/Estaci%C3%B3n_Espacial_Internacional">
-     <switch><text x="80" y="67.5" id="trsvg159-ko" systemLanguage="ko"><tspan id="trsvg58-ko">국제우주정거장</tspan></text><text x="80" y="67.5" id="trsvg159"><tspan id="trsvg58">iss</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Station_spatiale_internationale">
-     <switch><text x="80" y="67.5" id="trsvg160-ko" systemLanguage="ko"><tspan id="trsvg59-ko">국제우주정거장</tspan></text><text x="80" y="67.5" id="trsvg160"><tspan id="trsvg59">iss</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/International_Space_Station">
-     <switch><text x="80" y="67.5" id="trsvg161-ko" systemLanguage="ko"><tspan id="trsvg60-ko">국제우주정거장</tspan></text><text x="80" y="67.5" id="trsvg161"><tspan id="trsvg60">iss</tspan></text></switch>
-    </a>
-   </switch>
+   
   </g>
   <g id="hst" class="active" stroke="#00cc00" fill="#00cc00" text-anchor="start">
    <path d="M 0,-69.4 H 80"/>
    <ellipse cx="0" cy="0" rx="69.4" ry="69.4" fill="none"/>
    <g class="rot_hub"><use xlink:href="#satellite" transform="translate(0,-69.4)"/></g>
-   <switch>
+   
     <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Hubble_Space_Telescope">
-     <switch><text x="80" y="-69.4" id="trsvg162-ko" systemLanguage="ko"><tspan id="trsvg61-ko">허블</tspan></text><text x="80" y="-69.4" id="trsvg162"><tspan id="trsvg61">hubble</tspan></text></switch>
+     <text x="80" y="-69.4" id="trsvg162"><tspan id="trsvg61">hubble</tspan></text>
     </a>
-    <a systemLanguage="es" target="info" xlink:href="https://www.wikiwand.com/en/Telescopio_espacial_Hubble">
-     <switch><text x="80" y="-69.4" id="trsvg163-ko" systemLanguage="ko"><tspan id="trsvg62-ko">허블</tspan></text><text x="80" y="-69.4" id="trsvg163"><tspan id="trsvg62">hubble</tspan></text></switch>
-    </a>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Hubble_(t%C3%A9lescope_spatial)">
-     <switch><text x="80" y="-69.4" id="trsvg164-ko" systemLanguage="ko"><tspan id="trsvg63-ko">허블</tspan></text><text x="80" y="-69.4" id="trsvg164"><tspan id="trsvg63">hubble</tspan></text></switch>
-    </a>
-    <a target="info" xlink:href="https://www.wikiwand.com/en/Hubble_Space_Telescope">
-     <switch><text x="80" y="-69.4" id="trsvg165-ko" systemLanguage="ko"><tspan id="trsvg64-ko">허블</tspan></text><text x="80" y="-69.4" id="trsvg165"><tspan id="trsvg64">hubble</tspan></text></switch>
-    </a>
-   </switch>
+   
   </g>
   <g font-size="24" text-anchor="middle" stroke="#000000" stroke-width="1" fill="#000000">
    <g class="active">
@@ -284,18 +188,15 @@ a    { outline:none; }
     <use xlink:href="#mi" transform="translate(-161,0)"/>
     <use xlink:href="#mi" transform="translate(-322,0)"/>
     <use xlink:href="#mi" transform="translate(-483,0)"/>
-    <switch><text x="-115" y="-35" id="trsvg166"><tspan id="trsvg65">10000 km</tspan></text></switch>
-    <switch><text x="-215" y="-35" id="trsvg167"><tspan id="trsvg66">20000</tspan></text></switch>
-    <switch><text x="-310" y="-35" id="trsvg168"><tspan id="trsvg67">30000</tspan></text></switch>
-    <switch><text x="-432" y="-35" text-anchor="start" id="trsvg169"><tspan id="trsvg68">40000</tspan></text></switch>
-    <switch><text x="-160" y="55" id="trsvg170"><tspan id="trsvg69">10000 mi</tspan></text></switch>
-    <switch><text x="-330" y="55" id="trsvg171"><tspan id="trsvg70">20000</tspan></text></switch>
-    <switch>
+    <text x="-115" y="-35" id="trsvg166"><tspan id="trsvg65">10000 km</tspan></text>
+    <text x="-215" y="-35" id="trsvg167"><tspan id="trsvg66">20000</tspan></text>
+    <text x="-310" y="-35" id="trsvg168"><tspan id="trsvg67">30000</tspan></text>
+    <text x="-432" y="-35" text-anchor="start" id="trsvg169"><tspan id="trsvg68">40000</tspan></text>
+    <text x="-160" y="55" id="trsvg170"><tspan id="trsvg69">10000 mi</tspan></text>
+    <text x="-330" y="55" id="trsvg171"><tspan id="trsvg70">20000</tspan></text>
+    
      <text systemLanguage="en" x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
-     <text systemLanguage="es" x="-390" y="-95" font-weight="bold" text-anchor="start" id="trsvg173"><tspan id="trsvg73">radio de</tspan><tspan x="-390" y="-70" id="trsvg74">la órbita</tspan></text>
-     <text systemLanguage="en" x="-390" y="-95" font-weight="bold" text-anchor="start" id="trsvg174"><tspan id="trsvg75">rayon de</tspan><tspan x="-390" y="-70" id="trsvg76">l'orbite</tspan></text>
-     
-    <text x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg175-ko" systemLanguage="ko"><tspan id="trsvg77-ko">궤도</tspan><tspan x="-390" y="-70" id="trsvg78-ko">반지름</tspan></text><text x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg175"><tspan id="trsvg77">radius</tspan><tspan x="-390" y="-70" id="trsvg78">of orbit</tspan></text></switch>
+    
    </g>
    <g class="active">
     <g transform="translate(64,0)">
@@ -307,75 +208,46 @@ a    { outline:none; }
      <use xlink:href="#mi"/>
      <use xlink:href="#mi" transform="translate(161,0)"/>
      <use xlink:href="#mi" transform="translate(322,0)"/>
-     <switch><text x="100" y="-35" id="trsvg176"><tspan id="trsvg79">10000</tspan></text></switch>
-     <switch><text x="190" y="-35" id="trsvg177"><tspan id="trsvg80">20000</tspan></text></switch>
-     <switch><text x="300" y="-35" id="trsvg178"><tspan id="trsvg81">30000 km</tspan></text></switch>
-     <switch><text x="150" y="55" id="trsvg179"><tspan id="trsvg82">10000</tspan></text></switch>
-     <switch><text x="300" y="55" id="trsvg180"><tspan id="trsvg83">20000 mi</tspan></text></switch>
-     <switch>
+     <text x="100" y="-35" id="trsvg176"><tspan id="trsvg79">10000</tspan></text>
+     <text x="190" y="-35" id="trsvg177"><tspan id="trsvg80">20000</tspan></text>
+     <text x="300" y="-35" id="trsvg178"><tspan id="trsvg81">30000 km</tspan></text>
+     <text x="150" y="55" id="trsvg179"><tspan id="trsvg82">10000</tspan></text>
+     <text x="300" y="55" id="trsvg180"><tspan id="trsvg83">20000 mi</tspan></text>
+     
       <text systemLanguage="en" x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
-      <text systemLanguage="es" x="345" y="-95" font-weight="bold" text-anchor="end" id="trsvg182"><tspan id="trsvg86">altura sobre el</tspan><tspan x="345" y="-70" id="trsvg87">nivel del mar</tspan></text>
       <text systemLanguage="en" x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>
-      
-     <text x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg184-ko" systemLanguage="ko"><tspan id="trsvg89-ko">해발</tspan><tspan x="345" y="-70" id="trsvg90-ko">고도</tspan></text><text x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg184"><tspan id="trsvg89">height above</tspan><tspan x="345" y="-70" id="trsvg90">sea level</tspan></text></switch>
+     
     </g>
    </g>
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,0 V -432 M 0,-51 H 10 M 0,-81 H 10 M 0,-106 H 10 M 0,-128 H 10 M 0,-149 H 20 M 0,-168 H 10 M 0,-186 H 10 M 0,-203 H 10 M 0,-220 H 10 M 0,-236 H 30 M 0,-251 H 10 M 0,-266 H 10 M 0,-281 H 10 M 0,-295 H 10 M 0,-309 H 20 M 0,-322 H 10 M 0,-336 H 10 M 0,-349 H 10 M 0,-362 H 10 M 0,-374 H 30 M 0,-387 H 10 M 0,-399 H 10 M 0,-411 H 10 M 0,-423 H 10"/>
-    <switch>
      <g systemLanguage="en">
-      <switch><text x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185-ko" systemLanguage="ko"><tspan id="trsvg91-ko">궤도 주기</tspan></text><text x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185"><tspan id="trsvg91">orbital period</tspan></text></switch>
-      <switch><text x="30" y="-139" id="trsvg186-ko" systemLanguage="ko"><tspan id="trsvg92-ko">5시간</tspan></text><text x="30" y="-139" id="trsvg186"><tspan id="trsvg92">5 hours</tspan></text></switch>
-      <switch><text x="30" y="-221" id="trsvg187-ko" systemLanguage="ko"><tspan id="trsvg93-ko">10시간</tspan></text><text x="30" y="-221" id="trsvg187"><tspan id="trsvg93">10 hours</tspan></text></switch>
-      <switch><text x="30" y="-299" id="trsvg188-ko" systemLanguage="ko"><tspan id="trsvg94-ko">15시간</tspan></text><text x="30" y="-299" id="trsvg188"><tspan id="trsvg94">15 hours</tspan></text></switch>
-      <switch><text x="30" y="-364" id="trsvg189-ko" systemLanguage="ko"><tspan id="trsvg95-ko">20시간</tspan></text><text x="30" y="-364" id="trsvg189"><tspan id="trsvg95">20 hours</tspan></text></switch>
+      <text x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185"><tspan id="trsvg91">orbital period</tspan></text>
+      <text x="30" y="-139" id="trsvg186"><tspan id="trsvg92">5 hours</tspan></text>
+      <text x="30" y="-221" id="trsvg187"><tspan id="trsvg93">10 hours</tspan></text>
+      <text x="30" y="-299" id="trsvg188"><tspan id="trsvg94">15 hours</tspan></text>
+      <text x="30" y="-364" id="trsvg189"><tspan id="trsvg95">20 hours</tspan></text>
      </g>
-     <g systemLanguage="es">
-      <switch><text x="-15" y="-340" font-weight="bold" text-anchor="end" id="trsvg190-ko" systemLanguage="ko"><tspan id="trsvg96-ko">궤도 주기</tspan></text><text x="-15" y="-340" font-weight="bold" text-anchor="end" id="trsvg190"><tspan id="trsvg96">periodo orbital</tspan></text></switch>
-      <switch><text x="30" y="-139" id="trsvg191-ko" systemLanguage="ko"><tspan id="trsvg97-ko">5시간</tspan></text><text x="30" y="-139" id="trsvg191"><tspan id="trsvg97">5 horas</tspan></text></switch>
-      <switch><text x="30" y="-221" id="trsvg192-ko" systemLanguage="ko"><tspan id="trsvg98-ko">10시간</tspan></text><text x="30" y="-221" id="trsvg192"><tspan id="trsvg98">10 horas</tspan></text></switch>
-      <switch><text x="30" y="-299" id="trsvg193-ko" systemLanguage="ko"><tspan id="trsvg99-ko">15시간</tspan></text><text x="30" y="-299" id="trsvg193"><tspan id="trsvg99">15 horas</tspan></text></switch>
-      <switch><text x="30" y="-364" id="trsvg194-ko" systemLanguage="ko"><tspan id="trsvg100-ko">20시간</tspan></text><text x="30" y="-364" id="trsvg194"><tspan id="trsvg100">20 horas</tspan></text></switch>
-     </g>
-     <g systemLanguage="en">
-      <switch><text x="-15" y="-340" font-weight="bold" text-anchor="end" id="trsvg195-ko" systemLanguage="ko"><tspan id="trsvg101-ko">궤도 주기</tspan></text><text x="-15" y="-340" font-weight="bold" text-anchor="end" id="trsvg195"><tspan id="trsvg101">période orbitale</tspan></text></switch>
-      <switch><text x="30" y="-139" id="trsvg196-ko" systemLanguage="ko"><tspan id="trsvg102-ko">5시간</tspan></text><text x="30" y="-139" id="trsvg196"><tspan id="trsvg102">5 heures</tspan></text></switch>
-      <switch><text x="30" y="-221" id="trsvg197-ko" systemLanguage="ko"><tspan id="trsvg103-ko">10시간</tspan></text><text x="30" y="-221" id="trsvg197"><tspan id="trsvg103">10 heures</tspan></text></switch>
-      <switch><text x="30" y="-299" id="trsvg198-ko" systemLanguage="ko"><tspan id="trsvg104-ko">15시간</tspan></text><text x="30" y="-299" id="trsvg198"><tspan id="trsvg104">15 heures</tspan></text></switch>
-      <switch><text x="30" y="-364" id="trsvg199-ko" systemLanguage="ko"><tspan id="trsvg105-ko">20시간</tspan></text><text x="30" y="-364" id="trsvg199"><tspan id="trsvg105">20 heures</tspan></text></switch>
-     </g>
-     <g>
-      <switch><text x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg200-ko" systemLanguage="ko"><tspan id="trsvg106-ko">궤도 주기</tspan></text><text x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg200"><tspan id="trsvg106">orbital period</tspan></text></switch>
-      <switch><text x="30" y="-139" id="trsvg201-ko" systemLanguage="ko"><tspan id="trsvg107-ko">5시간</tspan></text><text x="30" y="-139" id="trsvg201"><tspan id="trsvg107">5 hours</tspan></text></switch>
-      <switch><text x="30" y="-221" id="trsvg202-ko" systemLanguage="ko"><tspan id="trsvg108-ko">10시간</tspan></text><text x="30" y="-221" id="trsvg202"><tspan id="trsvg108">10 hours</tspan></text></switch>
-      <switch><text x="30" y="-299" id="trsvg203-ko" systemLanguage="ko"><tspan id="trsvg109-ko">15시간</tspan></text><text x="30" y="-299" id="trsvg203"><tspan id="trsvg109">15 hours</tspan></text></switch>
-      <switch><text x="30" y="-364" id="trsvg204-ko" systemLanguage="ko"><tspan id="trsvg110-ko">20시간</tspan></text><text x="30" y="-364" id="trsvg204"><tspan id="trsvg110">20 hours</tspan></text></switch>
-     </g>
-    </switch>
    </g>
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,69 H -10 M 0,78 H -10 M 0,89 H -20 M 0,102 H -10 M 0,118 H -10 M 0,139 H -10 M 0,165 H -10 M 0,200 H -30 M 0,247 H -10 M 0,312 H -10 M 0,408 H -10 M 0,0 V 432 M 0,66 H 10 M 0,71 H 10 M 0,77 H 10 M 0,83 H 20 M 0,90 H 10 M 0,98 H 10 M 0,107 H 10 M 0,117 H 10 M 0,129 H 30 M 0,143 H 10 M 0,160 H 10 M 0,179 H 10 M 0,202 H 10 M 0,230 H 20 M 0,264 H 10 M 0,306 H 10 M 0,359 H 10 M 0,427 H 10"/>
-    <switch><text x="30" y="93" id="trsvg205"><tspan id="trsvg111">25000 km/h</tspan></text></switch>
-    <switch><text x="30" y="139" id="trsvg206"><tspan id="trsvg112">20000 km/h</tspan></text></switch>
-    <switch><text x="30" y="235" id="trsvg207"><tspan id="trsvg113">15000 km/h</tspan></text></switch>
-    <switch><text x="15" y="429" id="trsvg208"><tspan id="trsvg114">11000 km/h</tspan></text></switch>
-    <switch><text x="-30" y="99" text-anchor="end" id="trsvg209"><tspan id="trsvg115">15000 mph</tspan></text></switch>
-    <switch><text x="-30" y="210" text-anchor="end" id="trsvg210"><tspan id="trsvg116">10000 mph</tspan></text></switch>
-    <switch><text x="-15" y="415" text-anchor="end" id="trsvg211"><tspan id="trsvg117">7000 mph</tspan></text></switch>
-    <switch>
+    <text x="30" y="93" id="trsvg205"><tspan id="trsvg111">25000 km/h</tspan></text>
+    <text x="30" y="139" id="trsvg206"><tspan id="trsvg112">20000 km/h</tspan></text>
+    <text x="30" y="235" id="trsvg207"><tspan id="trsvg113">15000 km/h</tspan></text>
+    <text x="15" y="429" id="trsvg208"><tspan id="trsvg114">11000 km/h</tspan></text>
+    <text x="-30" y="99" text-anchor="end" id="trsvg209"><tspan id="trsvg115">15000 mph</tspan></text>
+    <text x="-30" y="210" text-anchor="end" id="trsvg210"><tspan id="trsvg116">10000 mph</tspan></text>
+    <text x="-15" y="415" text-anchor="end" id="trsvg211"><tspan id="trsvg117">7000 mph</tspan></text>
+    
      <g systemLanguage="en">
-      <switch><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212-ko" systemLanguage="ko"><tspan id="trsvg118-ko">공전 속도</tspan></text><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212"><tspan id="trsvg118">orbital speed</tspan></text></switch>
-     </g>
-     <g systemLanguage="es">
-      <switch><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg213-ko" systemLanguage="ko"><tspan id="trsvg119-ko">공전 속도</tspan></text><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg213"><tspan id="trsvg119">velocidad orbital</tspan></text></switch>
-     </g>
-     <g systemLanguage="en">
-      <switch><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg214-ko" systemLanguage="ko"><tspan id="trsvg120-ko">공전 속도</tspan></text><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg214"><tspan id="trsvg120">vitesse orbitale</tspan></text></switch>
+      
+      <text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212"><tspan id="trsvg118">orbital speed</tspan></text>
      </g>
      <g>
-      <switch><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215-ko" systemLanguage="ko"><tspan id="trsvg121-ko">공전 속도</tspan></text><text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215"><tspan id="trsvg121">orbital speed</tspan></text></switch>
+      
+      <text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215"><tspan id="trsvg121">orbital speed</tspan></text>
      </g>
-    </switch>
+    
    </g>
    <g id="earth" class="nofade">
     <ellipse cx="0" cy="0" rx="64.28" ry="64.28" fill="#0066ff" stroke="#66ccff"/>
