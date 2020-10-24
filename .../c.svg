@@ -215,7 +215,7 @@ a    { outline:none; }
      <text x="300" y="55" id="trsvg180"><tspan id="trsvg83">20000 mi</tspan></text>
      
       <text x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
-      <text x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>
+      <!--<text x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>-->
      
     </g>
    </g>
