@@ -83,7 +83,7 @@ a    { outline:none; }
   <circle cx="0" cy="0" r="99999" fill="#ffffff" fill-opacity="1"/>
   <g id="vab" class="active vab">
    <ellipse cx="0" cy="0" rx="1000" ry="1000" fill="url(#gradient_vab)"/>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Van_Allen_radiation_belt">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/Van_Allen_radiation_belt">
      <text x="-6" y="-109" fill="#cc6600" id="trsvg122"><tspan id="trsvg1">inner   van</tspan><tspan x="-6" y="-86" id="trsvg2">allen   belt</tspan></text>
      <text x="80" y="358" fill="#9999cc" id="trsvg123"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text>
     </a>
@@ -92,7 +92,7 @@ a    { outline:none; }
    <path d="M 0,-425 H 140"/>
    <ellipse cx="0" cy="0" rx="425" ry="425" fill="none"/>
    <g class="rot_gra"><use xlink:href="#satellite" transform="translate(0,-425)"/></g>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Graveyard_orbit">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/Graveyard_orbit">
      <text x="430" y="-400" id="trsvg130"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="28" id="trsvg18">(geo+300 km)</tspan></text>
     </a>
   </g>
@@ -101,7 +101,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="422" ry="422" fill="none"/>
    <g class="rot_geo"><use xlink:href="#satellite" transform="translate(0,-422)"/><path d="M 0,0 V -422" stroke-dasharray="1,4"/></g>
    
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Geostationary_orbit">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/Geostationary_orbit">
      <text x="-425" y="-400" id="trsvg134"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
     </a>
    
@@ -110,7 +110,7 @@ a    { outline:none; }
    <path d="M 0,-296 H -145"/>
    <ellipse cx="0" cy="0" rx="296" ry="296" fill="none"/>
    <g class="rot_gal"><use xlink:href="#satellite" transform="translate(0,-296)"/></g>
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Galileo_(satellite_navigation)">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/Galileo_(satellite_navigation)">
      <text x="-145" y="-296" id="trsvg138"><tspan id="trsvg33">galileo</tspan></text>
     </a>
   </g>
@@ -119,7 +119,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="276" ry="276" fill="none"/>
    <g class="rot_com"><use xlink:href="#satellite" transform="translate(0,-276)"/></g>
    
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/BeiDou">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/BeiDou">
      <text x="430" y="-295" id="trsvg142"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg38">meo satellites</tspan></text>
     </a>
    
@@ -129,7 +129,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="266" ry="266" fill="none"/>
    <g class="rot_gps"><use xlink:href="#satellite" transform="translate(0,-266)"/></g>
    
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Global_Positioning_System">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/Global_Positioning_System">
      <text x="-145" y="-261" id="trsvg146"><tspan id="trsvg45">gps</tspan></text>
     </a>
    
@@ -139,7 +139,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="255" ry="255" fill="none"/>
    <g class="rot_glo"><use xlink:href="#satellite" transform="translate(0,-255)"/></g>
    
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/GLONASS">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/GLONASS">
      
      <text x="430" y="-228" id="trsvg150"><tspan id="trsvg49">glonass</tspan></text>
     </a>
@@ -150,7 +150,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="71.8" ry="71.8" fill="none"/>
    <g class="rot_iri"><use xlink:href="#satellite" transform="translate(0,-71.8)"/></g>
    
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Iridium_satellite_constellation">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/Iridium_satellite_constellation">
      
      <text x="-80" y="-71.8" id="trsvg154"><tspan id="trsvg53">iridium</tspan></text>
     </a>
@@ -161,7 +161,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="67.5" ry="67.5" fill="none"/>
    <g class="rot_iss"><use xlink:href="#satellite" transform="translate(0,67.5)"/></g>
    
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/International_Space_Station">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/International_Space_Station">
      
      <text x="80" y="67.5" id="trsvg158"><tspan id="trsvg57">iss</tspan></text>
     </a>
@@ -172,7 +172,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="69.4" ry="69.4" fill="none"/>
    <g class="rot_hub"><use xlink:href="#satellite" transform="translate(0,-69.4)"/></g>
    
-    <a systemLanguage="en" target="info" xlink:href="https://www.wikiwand.com/en/Hubble_Space_Telescope">
+    <a target="info" xlink:href="https://www.wikiwand.com/en/Hubble_Space_Telescope">
      <text x="80" y="-69.4" id="trsvg162"><tspan id="trsvg61">hubble</tspan></text>
     </a>
    
@@ -195,7 +195,7 @@ a    { outline:none; }
     <text x="-160" y="55" id="trsvg170"><tspan id="trsvg69">10000 mi</tspan></text>
     <text x="-330" y="55" id="trsvg171"><tspan id="trsvg70">20000</tspan></text>
     
-     <text systemLanguage="en" x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
+     <text x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
     
    </g>
    <g class="active">
@@ -214,8 +214,8 @@ a    { outline:none; }
      <text x="150" y="55" id="trsvg179"><tspan id="trsvg82">10000</tspan></text>
      <text x="300" y="55" id="trsvg180"><tspan id="trsvg83">20000 mi</tspan></text>
      
-      <text systemLanguage="en" x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
-      <text systemLanguage="en" x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>
+      <text x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
+      <text x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>
      
     </g>
    </g>
