@@ -239,7 +239,7 @@ a    { outline:none; }
     <text x="-30" y="210" text-anchor="end" id="trsvg210"><tspan id="trsvg116">10000 mph</tspan></text>
     <text x="-15" y="415" text-anchor="end" id="trsvg211"><tspan id="trsvg117">7000 mph</tspan></text>
     
-     <g systemLanguage="en">
+     <g>
       
       <text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212"><tspan id="trsvg118">orbital speed</tspan></text>
      </g>
