@@ -9,7 +9,7 @@
 .vab  { font-style:italic; font-weight:bold; font-size:24px; text-anchor:middle; stroke:none; }
 .rule { fill:none; stroke-width:1; }
 path, ellipse { pointer-events:none; }
-text { stroke:none; stroke-width:0.5px; }
+text { stroke:none; stroke-width:1px; }
 a    { outline:none; }
 @keyframes         rot { from { transform:         rotate(360deg); }
                          to   { transform:         rotate(0deg);   } }
@@ -236,16 +236,9 @@ a    { outline:none; }
     <text lang="en-US" x="-30" y="99" text-anchor="end" id="trsvg209" style="stroke:#cccccc;"><tspan id="trsvg115">15000 mph</tspan></text>
     <text lang="en-US" x="-30" y="210" text-anchor="end" id="trsvg210" style="stroke:#cccccc;"><tspan id="trsvg116">10000 mph</tspan></text>
     <text lang="en-US" x="-15" y="415" text-anchor="end" id="trsvg211" style="stroke:#cccccc;"><tspan id="trsvg117">7000 mph</tspan></text>
-    
      <g>
-      
-      <text lang="en-US" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212" style="stroke:#cccccc;"><tspan id="trsvg118">orbital speed</tspan></text>
-     </g>
-     <g>
-      
       <text lang="en-US" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215" style="stroke:#cccccc;"><tspan id="trsvg121">orbital speed</tspan></text>
      </g>
-    
    </g>
    <g id="earth" class="nofade">
     <ellipse cx="0" cy="0" rx="64.28" ry="64.28" fill="#0066ff" stroke="#66ccff"/>
