@@ -80,7 +80,7 @@ a    { outline:none; }
   <clipPath id="clip_earth"><ellipse cx="0" cy="0" rx="100" ry="100"/></clipPath>
  </defs>
  <g class="main">
-  <circle cx="0" cy="0" r="99999" fill-opacity="1"/>
+  <circle cx="0" cy="0" r="99999" fill-opacity="0" />
   <g id="vab" class="active vab">
    <ellipse cx="0" cy="0" rx="1000" ry="1000" fill="url(#gradient_vab)"/>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Van_Allen_radiation_belt">
