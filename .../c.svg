@@ -9,7 +9,7 @@
 .vab  { font-style:italic; font-weight:bold; font-size:24px; text-anchor:middle; stroke:none; }
 .rule { fill:none; stroke-width:1; }
 path, ellipse { pointer-events:none; }
-text { stroke:none; }
+text { stroke:none; stroke-width:0.5px; }
 a    { outline:none; }
 @keyframes         rot { from { transform:         rotate(360deg); }
                          to   { transform:         rotate(0deg);   } }
@@ -188,15 +188,13 @@ a    { outline:none; }
     <use xlink:href="#mi" transform="translate(-161,0)"/>
     <use xlink:href="#mi" transform="translate(-322,0)"/>
     <use xlink:href="#mi" transform="translate(-483,0)"/>
-    <text lang="en-US" systemLanguage="en" x="-115" y="-35" id="trsvg166"><tspan id="trsvg65">10000 km</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-215" y="-35" id="trsvg167"><tspan id="trsvg66">20000</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-310" y="-35" id="trsvg168"><tspan id="trsvg67">30000</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-432" y="-35" text-anchor="start" id="trsvg169"><tspan id="trsvg68">40000</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-160" y="55" id="trsvg170"><tspan id="trsvg69">10000 mi</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-330" y="55" id="trsvg171"><tspan id="trsvg70">20000</tspan></text>
-    
-     <text lang="en-US" systemLanguage="en" x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
-    
+    <text lang="en-US" systemLanguage="en" x="-115" y="-35" id="trsvg166" style="stroke:#cccccc;"><tspan id="trsvg65">10000 km</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-215" y="-35" id="trsvg167" style="stroke:#cccccc;"><tspan id="trsvg66">20000</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-310" y="-35" id="trsvg168" style="stroke:#cccccc;"><tspan id="trsvg67">30000</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-432" y="-35" text-anchor="start" id="trsvg169" style="stroke:#cccccc;"><tspan id="trsvg68">40000</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-160" y="55" id="trsvg170" style="stroke:#cccccc;"><tspan id="trsvg69">10000 mi</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-330" y="55" id="trsvg171" style="stroke:#cccccc;"><tspan id="trsvg70">20000</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172" style="stroke:#cccccc;"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
    </g>
    <g class="active">
     <g transform="translate(64,0)">
@@ -208,13 +206,13 @@ a    { outline:none; }
      <use xlink:href="#mi"/>
      <use xlink:href="#mi" transform="translate(161,0)"/>
      <use xlink:href="#mi" transform="translate(322,0)"/>
-     <text lang="en-US" systemLanguage="en" x="100" y="-35" id="trsvg176"><tspan id="trsvg79">10000</tspan></text>
-     <text lang="en-US" systemLanguage="en" x="190" y="-35" id="trsvg177"><tspan id="trsvg80">20000</tspan></text>
-     <text lang="en-US" systemLanguage="en" x="300" y="-35" id="trsvg178"><tspan id="trsvg81">30000 km</tspan></text>
-     <text lang="en-US" systemLanguage="en" x="150" y="55" id="trsvg179"><tspan id="trsvg82">10000</tspan></text>
-     <text lang="en-US" systemLanguage="en" x="300" y="55" id="trsvg180"><tspan id="trsvg83">20000 mi</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="100" y="-35" id="trsvg176" style="stroke:#cccccc;"><tspan id="trsvg79">10000</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="190" y="-35" id="trsvg177" style="stroke:#cccccc;"><tspan id="trsvg80">20000</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="300" y="-35" id="trsvg178" style="stroke:#cccccc;"><tspan id="trsvg81">30000 km</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="150" y="55" id="trsvg179" style="stroke:#cccccc;"><tspan id="trsvg82">10000</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="300" y="55" id="trsvg180" style="stroke:#cccccc;"><tspan id="trsvg83">20000 mi</tspan></text>
      
-      <text lang="en-US" systemLanguage="en" x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181" style="stroke:#cccccc;"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
       <!--<text lang="en-US" systemLanguage="en" x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>-->
      
     </g>
@@ -222,30 +220,30 @@ a    { outline:none; }
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,0 V -432 M 0,-51 H 10 M 0,-81 H 10 M 0,-106 H 10 M 0,-128 H 10 M 0,-149 H 20 M 0,-168 H 10 M 0,-186 H 10 M 0,-203 H 10 M 0,-220 H 10 M 0,-236 H 30 M 0,-251 H 10 M 0,-266 H 10 M 0,-281 H 10 M 0,-295 H 10 M 0,-309 H 20 M 0,-322 H 10 M 0,-336 H 10 M 0,-349 H 10 M 0,-362 H 10 M 0,-374 H 30 M 0,-387 H 10 M 0,-399 H 10 M 0,-411 H 10 M 0,-423 H 10"/>
      <g>
-      <text lang="en-US" systemLanguage="en" x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185"><tspan id="trsvg91">orbital period</tspan></text>
-      <text lang="en-US" systemLanguage="en" x="30" y="-139" id="trsvg186"><tspan id="trsvg92">5 hours</tspan></text>
-      <text lang="en-US" systemLanguage="en" x="30" y="-221" id="trsvg187"><tspan id="trsvg93">10 hours</tspan></text>
-      <text lang="en-US" systemLanguage="en" x="30" y="-299" id="trsvg188"><tspan id="trsvg94">15 hours</tspan></text>
-      <text lang="en-US" systemLanguage="en" x="30" y="-364" id="trsvg189"><tspan id="trsvg95">20 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185" style="stroke:#cccccc;"><tspan id="trsvg91">orbital period</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-139" id="trsvg186" style="stroke:#cccccc;"><tspan id="trsvg92">5 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-221" id="trsvg187" style="stroke:#cccccc;"><tspan id="trsvg93">10 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-299" id="trsvg188" style="stroke:#cccccc;"><tspan id="trsvg94">15 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-364" id="trsvg189" style="stroke:#cccccc;"><tspan id="trsvg95">20 hours</tspan></text>
      </g>
    </g>
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,69 H -10 M 0,78 H -10 M 0,89 H -20 M 0,102 H -10 M 0,118 H -10 M 0,139 H -10 M 0,165 H -10 M 0,200 H -30 M 0,247 H -10 M 0,312 H -10 M 0,408 H -10 M 0,0 V 432 M 0,66 H 10 M 0,71 H 10 M 0,77 H 10 M 0,83 H 20 M 0,90 H 10 M 0,98 H 10 M 0,107 H 10 M 0,117 H 10 M 0,129 H 30 M 0,143 H 10 M 0,160 H 10 M 0,179 H 10 M 0,202 H 10 M 0,230 H 20 M 0,264 H 10 M 0,306 H 10 M 0,359 H 10 M 0,427 H 10"/>
-    <text lang="en-US" systemLanguage="en" x="30" y="93" id="trsvg205"><tspan id="trsvg111">25000 km/h</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="30" y="139" id="trsvg206"><tspan id="trsvg112">20000 km/h</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="30" y="235" id="trsvg207"><tspan id="trsvg113">15000 km/h</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="15" y="429" id="trsvg208"><tspan id="trsvg114">11000 km/h</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-30" y="99" text-anchor="end" id="trsvg209"><tspan id="trsvg115">15000 mph</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-30" y="210" text-anchor="end" id="trsvg210"><tspan id="trsvg116">10000 mph</tspan></text>
-    <text lang="en-US" systemLanguage="en" x="-15" y="415" text-anchor="end" id="trsvg211"><tspan id="trsvg117">7000 mph</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="30" y="93" id="trsvg205" style="stroke:#cccccc;"><tspan id="trsvg111">25000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="30" y="139" id="trsvg206" style="stroke:#cccccc;"><tspan id="trsvg112">20000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="30" y="235" id="trsvg207" style="stroke:#cccccc;"><tspan id="trsvg113">15000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="15" y="429" id="trsvg208" style="stroke:#cccccc;"><tspan id="trsvg114">11000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-30" y="99" text-anchor="end" id="trsvg209" style="stroke:#cccccc;"><tspan id="trsvg115">15000 mph</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-30" y="210" text-anchor="end" id="trsvg210" style="stroke:#cccccc;"><tspan id="trsvg116">10000 mph</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-15" y="415" text-anchor="end" id="trsvg211" style="stroke:#cccccc;"><tspan id="trsvg117">7000 mph</tspan></text>
     
      <g>
       
-      <text lang="en-US" systemLanguage="en" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212"><tspan id="trsvg118">orbital speed</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212" style="stroke:#cccccc;"><tspan id="trsvg118">orbital speed</tspan></text>
      </g>
      <g>
       
-      <text lang="en-US" systemLanguage="en" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215"><tspan id="trsvg121">orbital speed</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215" style="stroke:#cccccc;"><tspan id="trsvg121">orbital speed</tspan></text>
      </g>
     
    </g>
