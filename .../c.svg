@@ -84,8 +84,8 @@ a    { outline:none; }
   <g id="vab" class="active vab">
    <ellipse cx="0" cy="0" rx="1000" ry="1000" fill="url(#gradient_vab)"/>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Van_Allen_radiation_belt">
-     <text x="-6" y="-109" fill="#cc6600" id="trsvg122"><tspan id="trsvg1">inner   van</tspan><tspan x="-6" y="-86" id="trsvg2">allen   belt</tspan></text>
-     <text x="80" y="358" fill="#9999cc" id="trsvg123"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="-6" y="-109" fill="#cc6600" id="trsvg122"><tspan id="trsvg1">inner   van</tspan><tspan x="-6" y="-86" id="trsvg2">allen   belt</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="80" y="358" fill="#9999cc" id="trsvg123"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text>
     </a>
   </g>
   <g id="grave" class="active" stroke="#cc9999" fill="#cc9999" text-anchor="end">
@@ -93,7 +93,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="425" ry="425" fill="none"/>
    <g class="rot_gra"><use xlink:href="#satellite" transform="translate(0,-425)"/></g>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Graveyard_orbit">
-     <text x="430" y="-400" id="trsvg130"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="28" id="trsvg18">(geo+300 km)</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="430" y="-400" id="trsvg130"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="28" id="trsvg18">(geo+300 km)</tspan></text>
     </a>
   </g>
   <g id="geo" class="active" stroke="#666666" fill="#666666" text-anchor="start">
@@ -102,7 +102,7 @@ a    { outline:none; }
    <g class="rot_geo"><use xlink:href="#satellite" transform="translate(0,-422)"/><path d="M 0,0 V -422" stroke-dasharray="1,4"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Geostationary_orbit">
-     <text x="-425" y="-400" id="trsvg134"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="-425" y="-400" id="trsvg134"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
     </a>
    
   </g>
@@ -111,7 +111,7 @@ a    { outline:none; }
    <ellipse cx="0" cy="0" rx="296" ry="296" fill="none"/>
    <g class="rot_gal"><use xlink:href="#satellite" transform="translate(0,-296)"/></g>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Galileo_(satellite_navigation)">
-     <text x="-145" y="-296" id="trsvg138"><tspan id="trsvg33">galileo</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="-145" y="-296" id="trsvg138"><tspan id="trsvg33">galileo</tspan></text>
     </a>
   </g>
   <g id="beidou" class="active" stroke="#cc9900" fill="#cc9900" text-anchor="end">
@@ -120,7 +120,7 @@ a    { outline:none; }
    <g class="rot_com"><use xlink:href="#satellite" transform="translate(0,-276)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/BeiDou">
-     <text x="430" y="-295" id="trsvg142"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg38">meo satellites</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="430" y="-295" id="trsvg142"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg38">meo satellites</tspan></text>
     </a>
    
   </g>
@@ -130,7 +130,7 @@ a    { outline:none; }
    <g class="rot_gps"><use xlink:href="#satellite" transform="translate(0,-266)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Global_Positioning_System">
-     <text x="-145" y="-261" id="trsvg146"><tspan id="trsvg45">gps</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="-145" y="-261" id="trsvg146"><tspan id="trsvg45">gps</tspan></text>
     </a>
    
   </g>
@@ -141,7 +141,7 @@ a    { outline:none; }
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/GLONASS">
      
-     <text x="430" y="-228" id="trsvg150"><tspan id="trsvg49">glonass</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="430" y="-228" id="trsvg150"><tspan id="trsvg49">glonass</tspan></text>
     </a>
    
   </g>
@@ -152,7 +152,7 @@ a    { outline:none; }
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Iridium_satellite_constellation">
      
-     <text x="-80" y="-71.8" id="trsvg154"><tspan id="trsvg53">iridium</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="-80" y="-71.8" id="trsvg154"><tspan id="trsvg53">iridium</tspan></text>
     </a>
    
   </g>
@@ -163,7 +163,7 @@ a    { outline:none; }
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/International_Space_Station">
      
-     <text x="80" y="67.5" id="trsvg158"><tspan id="trsvg57">iss</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="80" y="67.5" id="trsvg158"><tspan id="trsvg57">iss</tspan></text>
     </a>
    
   </g>
@@ -173,7 +173,7 @@ a    { outline:none; }
    <g class="rot_hub"><use xlink:href="#satellite" transform="translate(0,-69.4)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Hubble_Space_Telescope">
-     <text x="80" y="-69.4" id="trsvg162"><tspan id="trsvg61">hubble</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="80" y="-69.4" id="trsvg162"><tspan id="trsvg61">hubble</tspan></text>
     </a>
    
   </g>
@@ -188,14 +188,14 @@ a    { outline:none; }
     <use xlink:href="#mi" transform="translate(-161,0)"/>
     <use xlink:href="#mi" transform="translate(-322,0)"/>
     <use xlink:href="#mi" transform="translate(-483,0)"/>
-    <text x="-115" y="-35" id="trsvg166"><tspan id="trsvg65">10000 km</tspan></text>
-    <text x="-215" y="-35" id="trsvg167"><tspan id="trsvg66">20000</tspan></text>
-    <text x="-310" y="-35" id="trsvg168"><tspan id="trsvg67">30000</tspan></text>
-    <text x="-432" y="-35" text-anchor="start" id="trsvg169"><tspan id="trsvg68">40000</tspan></text>
-    <text x="-160" y="55" id="trsvg170"><tspan id="trsvg69">10000 mi</tspan></text>
-    <text x="-330" y="55" id="trsvg171"><tspan id="trsvg70">20000</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-115" y="-35" id="trsvg166"><tspan id="trsvg65">10000 km</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-215" y="-35" id="trsvg167"><tspan id="trsvg66">20000</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-310" y="-35" id="trsvg168"><tspan id="trsvg67">30000</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-432" y="-35" text-anchor="start" id="trsvg169"><tspan id="trsvg68">40000</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-160" y="55" id="trsvg170"><tspan id="trsvg69">10000 mi</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-330" y="55" id="trsvg171"><tspan id="trsvg70">20000</tspan></text>
     
-     <text x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
     
    </g>
    <g class="active">
@@ -208,44 +208,44 @@ a    { outline:none; }
      <use xlink:href="#mi"/>
      <use xlink:href="#mi" transform="translate(161,0)"/>
      <use xlink:href="#mi" transform="translate(322,0)"/>
-     <text x="100" y="-35" id="trsvg176"><tspan id="trsvg79">10000</tspan></text>
-     <text x="190" y="-35" id="trsvg177"><tspan id="trsvg80">20000</tspan></text>
-     <text x="300" y="-35" id="trsvg178"><tspan id="trsvg81">30000 km</tspan></text>
-     <text x="150" y="55" id="trsvg179"><tspan id="trsvg82">10000</tspan></text>
-     <text x="300" y="55" id="trsvg180"><tspan id="trsvg83">20000 mi</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="100" y="-35" id="trsvg176"><tspan id="trsvg79">10000</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="190" y="-35" id="trsvg177"><tspan id="trsvg80">20000</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="300" y="-35" id="trsvg178"><tspan id="trsvg81">30000 km</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="150" y="55" id="trsvg179"><tspan id="trsvg82">10000</tspan></text>
+     <text lang="en-US" systemLanguage="en" x="300" y="55" id="trsvg180"><tspan id="trsvg83">20000 mi</tspan></text>
      
-      <text x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
-      <!--<text x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>-->
+      <text lang="en-US" systemLanguage="en" x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
+      <!--<text lang="en-US" systemLanguage="en" x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>-->
      
     </g>
    </g>
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,0 V -432 M 0,-51 H 10 M 0,-81 H 10 M 0,-106 H 10 M 0,-128 H 10 M 0,-149 H 20 M 0,-168 H 10 M 0,-186 H 10 M 0,-203 H 10 M 0,-220 H 10 M 0,-236 H 30 M 0,-251 H 10 M 0,-266 H 10 M 0,-281 H 10 M 0,-295 H 10 M 0,-309 H 20 M 0,-322 H 10 M 0,-336 H 10 M 0,-349 H 10 M 0,-362 H 10 M 0,-374 H 30 M 0,-387 H 10 M 0,-399 H 10 M 0,-411 H 10 M 0,-423 H 10"/>
      <g>
-      <text x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185"><tspan id="trsvg91">orbital period</tspan></text>
-      <text x="30" y="-139" id="trsvg186"><tspan id="trsvg92">5 hours</tspan></text>
-      <text x="30" y="-221" id="trsvg187"><tspan id="trsvg93">10 hours</tspan></text>
-      <text x="30" y="-299" id="trsvg188"><tspan id="trsvg94">15 hours</tspan></text>
-      <text x="30" y="-364" id="trsvg189"><tspan id="trsvg95">20 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185"><tspan id="trsvg91">orbital period</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-139" id="trsvg186"><tspan id="trsvg92">5 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-221" id="trsvg187"><tspan id="trsvg93">10 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-299" id="trsvg188"><tspan id="trsvg94">15 hours</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="30" y="-364" id="trsvg189"><tspan id="trsvg95">20 hours</tspan></text>
      </g>
    </g>
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,69 H -10 M 0,78 H -10 M 0,89 H -20 M 0,102 H -10 M 0,118 H -10 M 0,139 H -10 M 0,165 H -10 M 0,200 H -30 M 0,247 H -10 M 0,312 H -10 M 0,408 H -10 M 0,0 V 432 M 0,66 H 10 M 0,71 H 10 M 0,77 H 10 M 0,83 H 20 M 0,90 H 10 M 0,98 H 10 M 0,107 H 10 M 0,117 H 10 M 0,129 H 30 M 0,143 H 10 M 0,160 H 10 M 0,179 H 10 M 0,202 H 10 M 0,230 H 20 M 0,264 H 10 M 0,306 H 10 M 0,359 H 10 M 0,427 H 10"/>
-    <text x="30" y="93" id="trsvg205"><tspan id="trsvg111">25000 km/h</tspan></text>
-    <text x="30" y="139" id="trsvg206"><tspan id="trsvg112">20000 km/h</tspan></text>
-    <text x="30" y="235" id="trsvg207"><tspan id="trsvg113">15000 km/h</tspan></text>
-    <text x="15" y="429" id="trsvg208"><tspan id="trsvg114">11000 km/h</tspan></text>
-    <text x="-30" y="99" text-anchor="end" id="trsvg209"><tspan id="trsvg115">15000 mph</tspan></text>
-    <text x="-30" y="210" text-anchor="end" id="trsvg210"><tspan id="trsvg116">10000 mph</tspan></text>
-    <text x="-15" y="415" text-anchor="end" id="trsvg211"><tspan id="trsvg117">7000 mph</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="30" y="93" id="trsvg205"><tspan id="trsvg111">25000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="30" y="139" id="trsvg206"><tspan id="trsvg112">20000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="30" y="235" id="trsvg207"><tspan id="trsvg113">15000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="15" y="429" id="trsvg208"><tspan id="trsvg114">11000 km/h</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-30" y="99" text-anchor="end" id="trsvg209"><tspan id="trsvg115">15000 mph</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-30" y="210" text-anchor="end" id="trsvg210"><tspan id="trsvg116">10000 mph</tspan></text>
+    <text lang="en-US" systemLanguage="en" x="-15" y="415" text-anchor="end" id="trsvg211"><tspan id="trsvg117">7000 mph</tspan></text>
     
      <g>
       
-      <text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212"><tspan id="trsvg118">orbital speed</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg212"><tspan id="trsvg118">orbital speed</tspan></text>
      </g>
      <g>
       
-      <text x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215"><tspan id="trsvg121">orbital speed</tspan></text>
+      <text lang="en-US" systemLanguage="en" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215"><tspan id="trsvg121">orbital speed</tspan></text>
      </g>
     
    </g>
