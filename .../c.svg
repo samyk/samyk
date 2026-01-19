@@ -70,11 +70,11 @@ a    { outline:none; }
   </radialGradient>
   <radialGradient id="background_shade" cx="50%" cy="50%" r="100%" fx="50%" fy="30%">
    <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
-   <stop offset="15%" stop-color="#000000" stop-opacity="0.1"/>
-   <stop offset="30%" stop-color="#000000" stop-opacity="0.4"/>
+<!--   <stop offset="15%" stop-color="#000000" stop-opacity="0.1"/>
+   <stop offset="30%" stop-color="#000000" stop-opacity="0.4"/>-->
    <stop offset="50%" stop-color="#000000" stop-opacity="0.7"/>
-   <stop offset="70%" stop-color="#000000" stop-opacity="0.85"/>
-   <stop offset="85%" stop-color="#000000" stop-opacity="0.95"/>
+<!--   <stop offset="70%" stop-color="#000000" stop-opacity="0.85"/>
+   <stop offset="85%" stop-color="#000000" stop-opacity="0.95"/>-->
    <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
   </radialGradient>
   <filter id="glow">
