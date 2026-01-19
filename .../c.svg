@@ -124,102 +124,102 @@ a    { outline:none; }
      <text lang="en-US" x="80" y="358" fill="#a78bfa" id="trsvg123" font-weight="600" font-size="18px"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text>
     </a>
   </g>
-  <g id="grave" class="active" stroke="#a78bfa" fill="#a78bfa" text-anchor="end" stroke-width="1.5" opacity="0.9" filter="url(#glow)">
+  <g id="grave" class="active" stroke="#a78bfa" fill="#a78bfa" text-anchor="end" stroke-width="1.5" opacity="0.9">
    <path d="M 0,-425 H 140" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="425" ry="425" fill="none" stroke-dasharray="4,4" opacity="0.6"/>
    <g class="rot_gra"><use xlink:href="#satellite" transform="translate(0,-425)"/></g>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Graveyard_orbit">
-     <text lang="en-US" x="430" y="-400" id="trsvg130" fill="#a78bfa" font-weight="500" font-size="28px"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="22px" id="trsvg18">(geo+300 km)</tspan></text>
+     <text lang="en-US" x="430" y="-400" id="trsvg130" fill="#a78bfa" font-weight="500" font-size="28px" filter="url(#glow)"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="22px" id="trsvg18">(geo+300 km)</tspan></text>
     </a>
   </g>
-  <g id="geo" class="active" stroke="#94a3b8" fill="#94a3b8" text-anchor="start" stroke-width="1.5" opacity="0.9" filter="url(#glow)">
+  <g id="geo" class="active" stroke="#94a3b8" fill="#94a3b8" text-anchor="start" stroke-width="1.5" opacity="0.9">
    <path d="M 0,-422 H -170" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="422" ry="422" fill="none" stroke-dasharray="3,3" opacity="0.7"/>
    <g class="rot_geo"><use xlink:href="#satellite" transform="translate(0,-422)"/><path d="M 0,0 V -422" stroke-dasharray="1,4" opacity="0.4"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Geostationary_orbit">
-     <text lang="en-US" x="-425" y="-400" id="trsvg134" fill="#94a3b8" font-weight="500" font-size="28px"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
+     <text lang="en-US" x="-425" y="-400" id="trsvg134" fill="#94a3b8" font-weight="500" font-size="28px" filter="url(#glow)"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
     </a>
    
   </g>
-  <g id="galileo" class="active" stroke="#06b6d4" fill="#06b6d4" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+  <g id="galileo" class="active" stroke="#06b6d4" fill="#06b6d4" stroke-width="1.5" opacity="0.95">
    <path d="M 0,-296 H -145" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="296" ry="296" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_gal"><use xlink:href="#satellite" transform="translate(0,-296)"/></g>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Galileo_(satellite_navigation)">
-     <text lang="en-US" x="-145" y="-300" id="trsvg138" fill="#06b6d4" font-weight="500" font-size="28px"><tspan id="trsvg33">galileo</tspan></text>
+     <text lang="en-US" x="-145" y="-300" id="trsvg138" fill="#06b6d4" font-weight="500" font-size="28px" filter="url(#glow)"><tspan id="trsvg33">galileo</tspan></text>
     </a>
   </g>
-  <g id="beidou" class="active" stroke="#fbbf24" fill="#fbbf24" text-anchor="end" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+  <g id="beidou" class="active" stroke="#fbbf24" fill="#fbbf24" text-anchor="end" stroke-width="1.5" opacity="0.95">
    <path d="M 0,-276 H 230" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="276" ry="276" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_com"><use xlink:href="#satellite" transform="translate(0,-276)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/BeiDou">
-     <text lang="en-US" x="430" y="-290" id="trsvg142" fill="#fbbf24" font-weight="500" font-size="28px"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-265" font-size="22px" id="trsvg38">meo satellites</tspan></text>
+     <text lang="en-US" x="430" y="-290" id="trsvg142" fill="#fbbf24" font-weight="500" font-size="28px" filter="url(#glow)"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-265" font-size="22px" id="trsvg38">meo satellites</tspan></text>
     </a>
    
   </g>
-  <g id="gps" class="active" stroke="#3b82f6" fill="#3b82f6" stroke-width="1.5" opacity="0.95" filter="url(#glow_strong)">
+  <g id="gps" class="active" stroke="#3b82f6" fill="#3b82f6" stroke-width="1.5" opacity="0.95">
    <path d="M 0,-266 H -145" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="266" ry="266" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_gps"><use xlink:href="#satellite" transform="translate(0,-266)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Global_Positioning_System">
-     <text lang="en-US" x="-145" y="-261" id="trsvg146" fill="#3b82f6" font-weight="500" font-size="28px"><tspan id="trsvg45">gps</tspan></text>
+     <text lang="en-US" x="-145" y="-261" id="trsvg146" fill="#3b82f6" font-weight="500" font-size="28px" filter="url(#glow_strong)"><tspan id="trsvg45">gps</tspan></text>
     </a>
    
   </g>
-  <g id="glonass" class="active" stroke="#ef4444" fill="#ef4444" text-anchor="end" stroke-width="1.5" opacity="0.95" filter="url(#glow_strong)">
+  <g id="glonass" class="active" stroke="#ef4444" fill="#ef4444" text-anchor="end" stroke-width="1.5" opacity="0.95">
    <path d="M 0,-255 H 230" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="255" ry="255" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_glo"><use xlink:href="#satellite" transform="translate(0,-255)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/GLONASS">
      
-     <text lang="en-US" x="430" y="-228" id="trsvg150" fill="#ef4444" font-weight="500" font-size="28px"><tspan id="trsvg49">glonass</tspan></text>
+     <text lang="en-US" x="430" y="-228" id="trsvg150" fill="#ef4444" font-weight="500" font-size="28px" filter="url(#glow_strong)"><tspan id="trsvg49">glonass</tspan></text>
     </a>
    
   </g>
-  <g id="iridium" class="active" stroke="#a855f7" fill="#a855f7" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+  <g id="iridium" class="active" stroke="#a855f7" fill="#a855f7" stroke-width="1.5" opacity="0.95">
    <path d="M 0,-71.8 H -80" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="71.8" ry="71.8" fill="none" stroke-dasharray="2,2" opacity="0.7"/>
    <g class="rot_iri"><use xlink:href="#satellite" transform="translate(0,-71.8)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Iridium_satellite_constellation">
      
-     <text lang="en-US" x="-80" y="-71.8" id="trsvg154" fill="#a855f7" font-weight="500" font-size="28px"><tspan id="trsvg53">iridium</tspan></text>
+     <text lang="en-US" x="-80" y="-71.8" id="trsvg154" fill="#a855f7" font-weight="500" font-size="28px" filter="url(#glow)"><tspan id="trsvg53">iridium</tspan></text>
     </a>
    
   </g>
-  <g id="starlink" class="active" stroke="#60a5fa" fill="#60a5fa" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+  <g id="starlink" class="active" stroke="#60a5fa" fill="#60a5fa" stroke-width="1.5" opacity="0.95">
    <path d="M 0,67.5 H -80" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="70" ry="70" fill="none" stroke-dasharray="2,2" opacity="0.9"/>
    <g class="rot_sta"><use xlink:href="#satellite" transform="translate(0,70)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Starlink">
-     <text lang="en-US" x="-80" y="67.5" id="trsvg_starlink" fill="#60a5fa" font-weight="500" font-size="28px" text-anchor="end"><tspan id="trsvg_sta">starlink</tspan></text>
+     <text lang="en-US" x="-80" y="67.5" id="trsvg_starlink" fill="#60a5fa" font-weight="500" font-size="28px" text-anchor="end" filter="url(#glow)"><tspan id="trsvg_sta">starlink</tspan></text>
     </a>
    
   </g>
-  <g id="iss" class="active" stroke="#ec4899" fill="#ec4899" text-anchor="start" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+  <g id="iss" class="active" stroke="#ec4899" fill="#ec4899" text-anchor="start" stroke-width="1.5" opacity="0.95">
    <path d="M 0,67.5 H 80" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="67.5" ry="67.5" fill="none" stroke-dasharray="2,2" opacity="0.7"/>
    <g class="rot_iss"><use xlink:href="#satellite" transform="translate(0,67.5)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/International_Space_Station">
      
-     <text lang="en-US" x="80" y="67.5" id="trsvg158" fill="#ec4899" font-weight="500" font-size="28px"><tspan id="trsvg57">iss</tspan></text>
+     <text lang="en-US" x="80" y="67.5" id="trsvg158" fill="#ec4899" font-weight="500" font-size="28px" filter="url(#glow)"><tspan id="trsvg57">iss</tspan></text>
     </a>
    
   </g>
-  <g id="hst" class="active" stroke="#10b981" fill="#10b981" text-anchor="start" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+  <g id="hst" class="active" stroke="#10b981" fill="#10b981" text-anchor="start" stroke-width="1.5" opacity="0.95">
    <path d="M 0,-69.4 H 80" stroke-width="2"/>
    <ellipse cx="0" cy="0" rx="69.4" ry="69.4" fill="none" stroke-dasharray="2,2" opacity="0.7"/>
    <g class="rot_hub"><use xlink:href="#satellite" transform="translate(0,-69.4)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Hubble_Space_Telescope">
-     <text lang="en-US" x="80" y="-65" id="trsvg162" fill="#10b981" font-weight="500" font-size="28px"><tspan id="trsvg61">hubble</tspan></text>
+     <text lang="en-US" x="80" y="-65" id="trsvg162" fill="#10b981" font-weight="500" font-size="28px" filter="url(#glow)"><tspan id="trsvg61">hubble</tspan></text>
     </a>
    
   </g>
