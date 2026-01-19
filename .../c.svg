@@ -17,9 +17,12 @@ a    { outline:none; }
                          to   { -moz-transform:    rotate(0deg);   } }
 @-webkit-keyframes rot { from { -webkit-transform: rotate(360deg); }
                          to   { -webkit-transform: rotate(0deg);   } }
-.rot_sun { animation:         rot 8766s  linear infinite;
-           -moz-animation:    rot 8766s  linear infinite;
-           -webkit-animation: rot 8766s  linear infinite; }
+.rot_sun { animation:         rot 24s  linear infinite;
+           -moz-animation:    rot 24s  linear infinite;
+           -webkit-animation: rot 24s  linear infinite; }
+.rot_bg_shade { animation:         rot 24s  linear infinite;
+           -moz-animation:    rot 24s  linear infinite;
+           -webkit-animation: rot 24s  linear infinite; }
 .rot_gra { animation:         rot 24.19s linear infinite;
            -moz-animation:    rot 24.19s linear infinite;
            -webkit-animation: rot 24.19s linear infinite; }
@@ -59,8 +62,12 @@ a    { outline:none; }
  </style>
  <defs>
   <radialGradient id="gradient_shade" cx="50%" cy="50%" r="67%" fx="33%" fy="33%">
-   <stop offset="10%" stop-color="#000000" stop-opacity="0"/>
-   <stop offset="99%" stop-color="#000000" stop-opacity="0.85"/>
+   <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+   <stop offset="20%" stop-color="#000000" stop-opacity="0.2"/>
+   <stop offset="40%" stop-color="#000000" stop-opacity="0.6"/>
+   <stop offset="60%" stop-color="#000000" stop-opacity="0.9"/>
+   <stop offset="80%" stop-color="#000000" stop-opacity="0.98"/>
+   <stop offset="99%" stop-color="#000000" stop-opacity="1"/>
   </radialGradient>
   <radialGradient id="gradient_vab" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
    <stop offset="7.4%" stop-color="#ff6b35" stop-opacity="0"/>
@@ -72,13 +79,29 @@ a    { outline:none; }
    <stop offset="66.4%" stop-color="#ffffff" stop-opacity="0"/>
   </radialGradient>
   <radialGradient id="earth_gradient" cx="30%" cy="30%">
-   <stop offset="0%" stop-color="#4a9eff" stop-opacity="1"/>
+   <stop offset="0%" stop-color="#6bb3ff" stop-opacity="1"/>
+   <stop offset="30%" stop-color="#4a9eff" stop-opacity="1"/>
    <stop offset="50%" stop-color="#0066cc" stop-opacity="1"/>
    <stop offset="100%" stop-color="#003d7a" stop-opacity="1"/>
   </radialGradient>
   <radialGradient id="earth_atmosphere" cx="50%" cy="50%" r="120%">
-   <stop offset="0%" stop-color="#87ceeb" stop-opacity="0.3"/>
+   <stop offset="0%" stop-color="#b3e0ff" stop-opacity="0.5"/>
+   <stop offset="50%" stop-color="#87ceeb" stop-opacity="0.3"/>
    <stop offset="100%" stop-color="#87ceeb" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="earth_sunlight" cx="30%" cy="30%" r="80%">
+   <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+   <stop offset="40%" stop-color="#ffffff" stop-opacity="0.2"/>
+   <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="background_shade" cx="50%" cy="50%" r="100%" fx="50%" fy="30%">
+   <stop offset="0%" stop-color="#000000" stop-opacity="0"/>
+   <stop offset="15%" stop-color="#000000" stop-opacity="0.1"/>
+   <stop offset="30%" stop-color="#000000" stop-opacity="0.4"/>
+   <stop offset="50%" stop-color="#000000" stop-opacity="0.7"/>
+   <stop offset="70%" stop-color="#000000" stop-opacity="0.85"/>
+   <stop offset="85%" stop-color="#000000" stop-opacity="0.95"/>
+   <stop offset="100%" stop-color="#000000" stop-opacity="1"/>
   </radialGradient>
   <filter id="glow">
    <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
@@ -292,6 +315,7 @@ a    { outline:none; }
    <g id="earth" class="nofade">
     <ellipse cx="0" cy="0" rx="64.28" ry="64.28" fill="url(#earth_atmosphere)"/>
     <ellipse cx="0" cy="0" rx="64.28" ry="64.28" fill="url(#earth_gradient)" stroke="#4a9eff" stroke-width="1.5" opacity="0.9"/>
+    <ellipse class="rot_sun" cx="0" cy="0" rx="64.28" ry="64.28" fill="url(#earth_sunlight)"/>
     <g class="rot_geo">
      <path transform="scale(0.6378)" fill="#22c55e" stroke="none" clip-path="url(#clip_earth)" opacity="0.85" d="M -15,-22 C -18,-28 -9,-20 -13,-28 -9,-30 -12,-31 -6,-34 -2,-36 -9,-35 -3,-43 2,-38 -6,-34 -2,-31 -3,-38 20,-31 8,-41 9,-53 12,-47 10,-42 20,-56 19,-43 23,-50 28,-50 21,-54 28,-55 28,-50 29,-43 35,-46 26,-54 36,-44 35,-56 51,-65 53,-49 59,-52 59,-62 62,-61 68,-59 69,-57 67,-46 74,-52 76,-58 70,-55 76,-63 79,-52 76,-58 75,-50 62,-41 76,-43 70,-40 62,-29 77,-29 80,-23 84,-25 99,-19 76,-11 77,1 71,-11 71,6 67,23 64,12 63,20 79,17 64,12 74,7 81,11 79,22 81,31 72,33 57,32 59,36 95,34 79,22 85,19 100,37 82,45 108,48 101,68 114,55 110,67 111,71 113,85 96,100 85,98 66,99 70,87 52,79 60,92 55,80 41,77 28,102 13,85 10,74 11,61 35,48 34,53 49,48 46,45 46,40 60,38 53,29 49,26 51,40 43,34 46,25 49,26 49,21 44,21 45,23 42,22 42,22 43,24 44,26 34,26 44,31 43,34 38,39 49,36 41,40 22,36 32,42 39,41 35,48 44,46 34,46 44,41 24,40 23,50 23,55 16,61 14,50 24,45 21,44 16,44 14,40 25,37 19,30 22,26 19,35 24,31 33,24 21,24 20,17 18,18 31,35 20,27 20,32 13,28 16,24 16,19 12,14 22,10 26,13 22,5 23,2 26,-2 12,-1 23,-3 16,-3 16,-8 10,-10 8,-14 14,-12 10,-15 7,-16 10,-22 3,-19 -7,-26 -6,-17 -15,-22  M -26,-30 C -28,-14 -24,-35 -15,-17 -16,-7 -24,-14 -22,-5 -28,8 -21,7 -18,3 -13,9 -29,11 -19,11 -23,18 -23,8 -24,16 -31,7 -36,12 -32,20 -36,22 -36,29 -31,22 -29,28 -25,9 -23,25 -20,31 -23,35 -22,42 -35,36 -11,39 -34,33 -22,37 -36,34 -28,40 -41,39 -29,38 -37,37 -41,39 -41,34 -46,39 -59,32 -56,43 -60,40 -60,35 -54,37 -62,29 -61,11 -87,28 -69,32 -64,42 -79,30 -71,43 -82,50 -70,50 -72,56 -56,58 -67,61 -53,71 -48,86 -42,78 -41,90 -38,96 -14,102 -19,107 -20,110 -30,110 -28,114 -32,121 -34,121 -51,117 -51,122 -67,125 -77,114 -66,127 -89,115 -93,112 -88,122 -105,106 -101,116 -116,108 -106,120 -105,122 -126,108 -124,92 -111,98 -104,88 -109,102 -86,84 -94,66 -87,70 -88,58 -81,53 -79,62 -74,57 -72,51 -74,52 -76,53 -80,40 -76,38 -77,29 -79,25 -79,10 -75,13 -74,10 -71,6 -66,1 -74,5 -73,7 -75,8 -74,-0 -64,0 -62,-6 -46,-15 -59,0 -31,-15 -24,-21 -30,-23 -26,-30  M 13,-141 C -15,-128 24,-122 23,-109 28,-109 25,-120 33,-114 40,-109 38,-108 33,-109 49,-99 48,-108 53,-103 73,-96 58,-108 81,-94 90,-96 82,-102 87,-107 73,-122 59,-116 44,-131 33,-133 42,-142 13,-141  M 12,-106 C 19,-102 27,-101 29,-97 42,-98 29,-95 40,-92 42,-100 25,-100 33,-104 30,-105 26,-108 21,-108 16,-103 19,-112 7,-111 2,-111 19,-107 12,-106  M 108,31 C 115,25 114,33 120,37 121,39 123,43 119,45 111,49 117,41 111,44 108,43 109,40 110,37 110,37 112,34 108,31  M 12,-52 C 11,-54 13,-57 15,-58 16,-61 21,-61 25,-56 23,-55 14,-60 13,-50 7,-48 7,-53 12,-52  M 43,-81 C 40,-73 48,-71 42,-69 44,-62 49,-69 48,-71 45,-77 59,-69 48,-76 53,-76 47,-83 43,-81  M 48,-86 C 50,-82 48,-86 55,-82 65,-82 58,-86 61,-85 62,-93 58,-81 56,-90 54,-89 59,-84 48,-86  M 55,-77 C 55,-72 57,-73 60,-72 63,-71 68,-71 71,-68 74,-74 67,-83 63,-81 53,-81 63,-76 55,-77  M -21,-3 C -22,-5 -13,-1 -15,-0 -14,7 -16,8 -18,-1 -21,2 -16,3 -22,5 -27,0 -22,0 -21,-3  M -43,-139 C -45,-139 -49,-137 -50,-139 -42,-142 -41,-150 -30,-148 -31,-145 -37,-147 -43,-139  M -42,-132 C -45,-129 -50,-134 -56,-131 -59,-127 -54,-142 -46,-136 -52,-133 -45,-134 -42,-132  M -15,10 C -16,17 -11,18 -21,24 -28,8 -19,23 -18,13 -21,7 -17,6 -15,10  M 12,36 C 11,29 13,33 17,36 23,38 16,39 15,42 14,35 15,37 12,36  M -52,-54 C -55,-50 -61,-47 -60,-50 -62,-54 -59,-48 -52,-54  M -8,14 C -17,10 -1,3 2,9 3,33 -10,22 -10,32 -18,30 -10,20 -8,14  M 42,-62 C 41,-59 38,-62 38,-60 38,-62 40,-63 42,-62  M 57,-56 C 54,-57 53,-59 53,-54 58,-54 56,-53 57,-56  M 24,-144 C 21,-145 15,-142 16,-145 22,-153 32,-137 24,-144  M 69,-84 C 75,-77 76,-75 80,-69 81,-74 72,-83 69,-84  M -61,53 C -57,56 -52,61 -54,57 -56,53 -60,50 -61,53  M 80,-69 C 78,-71 78,-49 81,-48 81,-53 85,-59 80,-69  M -66,38 C -62,36 -57,56 -60,50 -65,40 -60,45 -66,38  M 12,41 C 14,40 13,38 12,36 9,35 10,42 12,41  M 0,27 C 2,26 4,25 5,27 2,31 1,29 0,27  M -5,5 C -4,7 -14,12 -16,8 -15,5 -9,2 -5,5  M 88,-26 C 85,-28 86,-26 85,-23 90,-22 91,-25 88,-26  M 8,6 C 13,11 9,8 10,10 5,10 7,9 8,6  M 14,-2 C 17,-1 17,4 21,3 23,7 14,3 14,-2"/>
     </g>
@@ -307,4 +331,5 @@ a    { outline:none; }
    </g>
   </g>
  </g>
+ <ellipse class="rot_bg_shade" cx="0" cy="0" rx="864" ry="864" fill="url(#background_shade)" opacity="1" style="mix-blend-mode: multiply;"/>
 </svg>
