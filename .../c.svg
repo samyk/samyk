@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" width="100%" height="100%" viewBox="-432 -432 864 864" translate="no">
  <style type="text/css">
-.main { font-family:Helvetica,Arial,sans-serif; font-size:40px; text-anchor:end;
-        fill:none; stroke-opacity:0.75; stroke-width:2; stroke-linecap:round; cursor:default; }
-.main:hover   { fill-opacity:0.2; stroke-opacity:0.2; }
+.main { font-family:'Georgia', 'Times New Roman', serif; font-size:32px; text-anchor:end;
+        fill:none; stroke-opacity:0.85; stroke-width:2; stroke-linecap:round; cursor:default; }
+.main:hover   { fill-opacity:0.3; stroke-opacity:0.3; }
 .active:hover { fill-opacity:1;   stroke-opacity:1; stroke-width:3; }
 .nofade       { fill-opacity:1;   stroke-opacity:1; pointer-events:none; }
-.vab  { font-style:italic; font-weight:bold; font-size:24px; text-anchor:middle; stroke:none; }
-.rule { fill:none; stroke-width:1; }
+.vab  { font-style:italic; font-weight:600; font-size:18px; text-anchor:middle; stroke:none; }
+.rule { fill:none; stroke-width:1; stroke:#4a5568; opacity:0.4; }
 path, ellipse { pointer-events:none; }
-text { stroke:none; stroke-width:1px; }
+text { stroke:none; stroke-width:0.5px; font-weight:500; font-family:'Georgia', 'Times New Roman', serif; }
 a    { outline:none; }
 @keyframes         rot { from { transform:         rotate(360deg); }
                          to   { transform:         rotate(0deg);   } }
@@ -47,6 +47,9 @@ a    { outline:none; }
 .rot_iss { animation:         rot  1.5s  linear infinite;
            -moz-animation:    rot  1.5s  linear infinite;
            -webkit-animation: rot  1.5s  linear infinite; }
+.rot_sta { animation:         rot  1.55s linear infinite;
+           -moz-animation:    rot  1.55s linear infinite;
+           -webkit-animation: rot  1.55s linear infinite; }
 .rot_min { animation:         rot  1s    linear infinite;
            -moz-animation:    rot  1s    linear infinite;
            -webkit-animation: rot  1s    linear infinite; }
@@ -57,123 +60,169 @@ a    { outline:none; }
  <defs>
   <radialGradient id="gradient_shade" cx="50%" cy="50%" r="67%" fx="33%" fy="33%">
    <stop offset="10%" stop-color="#000000" stop-opacity="0"/>
-   <stop offset="99%" stop-color="#000000" stop-opacity="0.75"/>
+   <stop offset="99%" stop-color="#000000" stop-opacity="0.85"/>
   </radialGradient>
   <radialGradient id="gradient_vab" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
-   <stop offset="7.4%" stop-color="#ff9900" stop-opacity="0"/>
-   <stop offset="9.4%" stop-color="#ff9900" stop-opacity="0.3"/>
-   <stop offset="10.4%" stop-color="#ff9900" stop-opacity="0.3"/>
-   <stop offset="12.4%" stop-color="#ff9900" stop-opacity="0"/>
+   <stop offset="7.4%" stop-color="#ff6b35" stop-opacity="0"/>
+   <stop offset="9.4%" stop-color="#ff6b35" stop-opacity="0.4"/>
+   <stop offset="10.4%" stop-color="#ff6b35" stop-opacity="0.4"/>
+   <stop offset="12.4%" stop-color="#ff6b35" stop-opacity="0"/>
    <stop offset="19.4%" stop-color="#ffffff" stop-opacity="0"/>
-   <stop offset="21.4%" stop-color="#ffffff" stop-opacity="0.2"/>
+   <stop offset="21.4%" stop-color="#ffffff" stop-opacity="0.25"/>
    <stop offset="66.4%" stop-color="#ffffff" stop-opacity="0"/>
   </radialGradient>
+  <radialGradient id="earth_gradient" cx="30%" cy="30%">
+   <stop offset="0%" stop-color="#4a9eff" stop-opacity="1"/>
+   <stop offset="50%" stop-color="#0066cc" stop-opacity="1"/>
+   <stop offset="100%" stop-color="#003d7a" stop-opacity="1"/>
+  </radialGradient>
+  <radialGradient id="earth_atmosphere" cx="50%" cy="50%" r="120%">
+   <stop offset="0%" stop-color="#87ceeb" stop-opacity="0.3"/>
+   <stop offset="100%" stop-color="#87ceeb" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="glow">
+   <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+   <feMerge>
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+  <filter id="glow_strong">
+   <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+   <feMerge>
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
+  <filter id="satellite_glow">
+   <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+   <feMerge>
+    <feMergeNode in="coloredBlur"/>
+    <feMergeNode in="SourceGraphic"/>
+   </feMerge>
+  </filter>
   <path id="km" class="rule" d="M 10,0 V -10 M 20,0 V -10 M 30,0 V -10 M 40,0 V -10 M 50,0 V -20 M 60,0 V -10 M 70,0 V -10 M 80,0 V -10 M 90,0 V -10 M 100,0 V -30"/>
   <path id="mi" class="rule" d="M 16.1,0 V 10 M 32.2,0 V 10 M 48.3,0 V 10 M 64.4,0 V 10 M 80.5,0 V 20 M 96.6,0 V 10 M 112.7,0 V 10 M 128.8,0 V 10 M 144.9,0 V 10 M 161,0 V 30"/>
-  <circle id="satellite" cx="0" cy="0" r="3"/>
+  <g id="satellite">
+   <circle cx="0" cy="0" r="4" fill="white" filter="url(#satellite_glow)"/>
+   <circle cx="0" cy="0" r="2.5" fill="currentColor"/>
+   <rect x="-1.5" y="-3" width="3" height="1.5" fill="currentColor" opacity="0.8"/>
+   <rect x="-1.5" y="1.5" width="3" height="1.5" fill="currentColor" opacity="0.8"/>
+  </g>
   <path id="tick" d="M 0,-50 V -60"/>
-  <g id="tick_3" stroke="#cccccc">
-   <use xlink:href="#tick" stroke="#999999"/>
+  <g id="tick_3" stroke="#94a3b8" stroke-width="1.5">
+   <use xlink:href="#tick" stroke="#64748b"/>
    <use xlink:href="#tick" transform="rotate(30)"/>
    <use xlink:href="#tick" transform="rotate(60)"/>
   </g>
   <clipPath id="clip_earth"><ellipse cx="0" cy="0" rx="100" ry="100"/></clipPath>
  </defs>
+ <rect x="-432" y="-432" width="864" height="864" fill="#0f172a"/>
  <g class="main">
   <circle cx="0" cy="0" r="99999" fill-opacity="0" />
   <g id="vab" class="active vab">
-   <ellipse cx="0" cy="0" rx="1000" ry="1000" fill="url(#gradient_vab)"/>
+   <ellipse cx="0" cy="0" rx="1000" ry="1000" fill="url(#gradient_vab)" opacity="0.6"/>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Van_Allen_radiation_belt">
-     <text lang="en-US" x="-6" y="-109" fill="#cc6600" id="trsvg122"><tspan id="trsvg1">inner   van</tspan><tspan x="-6" y="-86" id="trsvg2">allen   belt</tspan></text>
-     <text lang="en-US" x="80" y="358" fill="#9999cc" id="trsvg123"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text>
+     <text lang="en-US" x="-6" y="-109" fill="#ff6b35" id="trsvg122" font-weight="600" font-size="18px"><tspan id="trsvg1">inner   van</tspan><tspan x="-6" y="-86" id="trsvg2">allen   belt</tspan></text>
+     <text lang="en-US" x="80" y="358" fill="#a78bfa" id="trsvg123" font-weight="600" font-size="18px"><tspan id="trsvg3">outer van</tspan><tspan x="80" y="380" id="trsvg4">allen belt</tspan></text>
     </a>
   </g>
-  <g id="grave" class="active" stroke="#cc9999" fill="#cc9999" text-anchor="end">
-   <path d="M 0,-425 H 140"/>
-   <ellipse cx="0" cy="0" rx="425" ry="425" fill="none"/>
+  <g id="grave" class="active" stroke="#a78bfa" fill="#a78bfa" text-anchor="end" stroke-width="1.5" opacity="0.9" filter="url(#glow)">
+   <path d="M 0,-425 H 140" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="425" ry="425" fill="none" stroke-dasharray="4,4" opacity="0.6"/>
    <g class="rot_gra"><use xlink:href="#satellite" transform="translate(0,-425)"/></g>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Graveyard_orbit">
-     <text lang="en-US" x="430" y="-400" id="trsvg130"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="28" id="trsvg18">(geo+300 km)</tspan></text>
+     <text lang="en-US" x="430" y="-400" id="trsvg130" fill="#a78bfa" font-weight="500" font-size="28px"><tspan id="trsvg17">graveyard orbit</tspan><tspan x="430" y="-366" font-size="22px" id="trsvg18">(geo+300 km)</tspan></text>
     </a>
   </g>
-  <g id="geo" class="active" stroke="#666666" fill="#666666" text-anchor="start">
-   <path d="M 0,-422 H -170"/>
-   <ellipse cx="0" cy="0" rx="422" ry="422" fill="none"/>
-   <g class="rot_geo"><use xlink:href="#satellite" transform="translate(0,-422)"/><path d="M 0,0 V -422" stroke-dasharray="1,4"/></g>
+  <g id="geo" class="active" stroke="#94a3b8" fill="#94a3b8" text-anchor="start" stroke-width="1.5" opacity="0.9" filter="url(#glow)">
+   <path d="M 0,-422 H -170" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="422" ry="422" fill="none" stroke-dasharray="3,3" opacity="0.7"/>
+   <g class="rot_geo"><use xlink:href="#satellite" transform="translate(0,-422)"/><path d="M 0,0 V -422" stroke-dasharray="1,4" opacity="0.4"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Geostationary_orbit">
-     <text lang="en-US" x="-425" y="-400" id="trsvg134"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
+     <text lang="en-US" x="-425" y="-400" id="trsvg134" fill="#94a3b8" font-weight="500" font-size="28px"><tspan id="trsvg25">geostationary</tspan><tspan x="-425" y="-365" id="trsvg26">earth orbit</tspan></text>
     </a>
    
   </g>
-  <g id="galileo" class="active" stroke="#009999" fill="#009999">
-   <path d="M 0,-296 H -145"/>
-   <ellipse cx="0" cy="0" rx="296" ry="296" fill="none"/>
+  <g id="galileo" class="active" stroke="#06b6d4" fill="#06b6d4" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+   <path d="M 0,-296 H -145" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="296" ry="296" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_gal"><use xlink:href="#satellite" transform="translate(0,-296)"/></g>
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Galileo_(satellite_navigation)">
-     <text lang="en-US" x="-145" y="-296" id="trsvg138"><tspan id="trsvg33">galileo</tspan></text>
+     <text lang="en-US" x="-145" y="-300" id="trsvg138" fill="#06b6d4" font-weight="500" font-size="28px"><tspan id="trsvg33">galileo</tspan></text>
     </a>
   </g>
-  <g id="beidou" class="active" stroke="#cc9900" fill="#cc9900" text-anchor="end">
-   <path d="M 0,-276 H 230"/>
-   <ellipse cx="0" cy="0" rx="276" ry="276" fill="none"/>
+  <g id="beidou" class="active" stroke="#fbbf24" fill="#fbbf24" text-anchor="end" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+   <path d="M 0,-276 H 230" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="276" ry="276" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_com"><use xlink:href="#satellite" transform="translate(0,-276)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/BeiDou">
-     <text lang="en-US" x="430" y="-295" id="trsvg142"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-270" font-size="28" id="trsvg38">meo satellites</tspan></text>
+     <text lang="en-US" x="430" y="-290" id="trsvg142" fill="#fbbf24" font-weight="500" font-size="28px"><tspan id="trsvg37">beidou</tspan><tspan x="430" y="-265" font-size="22px" id="trsvg38">meo satellites</tspan></text>
     </a>
    
   </g>
-  <g id="gps" class="active" stroke="#0000ff" fill="#0000ff">
-   <path d="M 0,-266 H -145"/>
-   <ellipse cx="0" cy="0" rx="266" ry="266" fill="none"/>
+  <g id="gps" class="active" stroke="#3b82f6" fill="#3b82f6" stroke-width="1.5" opacity="0.95" filter="url(#glow_strong)">
+   <path d="M 0,-266 H -145" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="266" ry="266" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_gps"><use xlink:href="#satellite" transform="translate(0,-266)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Global_Positioning_System">
-     <text lang="en-US" x="-145" y="-261" id="trsvg146"><tspan id="trsvg45">gps</tspan></text>
+     <text lang="en-US" x="-145" y="-261" id="trsvg146" fill="#3b82f6" font-weight="500" font-size="28px"><tspan id="trsvg45">gps</tspan></text>
     </a>
    
   </g>
-  <g id="glonass" class="active" stroke="#ff0000" fill="#ff0000" text-anchor="end">
-   <path d="M 0,-255 H 230"/>
-   <ellipse cx="0" cy="0" rx="255" ry="255" fill="none"/>
+  <g id="glonass" class="active" stroke="#ef4444" fill="#ef4444" text-anchor="end" stroke-width="1.5" opacity="0.95" filter="url(#glow_strong)">
+   <path d="M 0,-255 H 230" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="255" ry="255" fill="none" stroke-dasharray="3,3" opacity="0.65"/>
    <g class="rot_glo"><use xlink:href="#satellite" transform="translate(0,-255)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/GLONASS">
      
-     <text lang="en-US" x="430" y="-228" id="trsvg150"><tspan id="trsvg49">glonass</tspan></text>
+     <text lang="en-US" x="430" y="-228" id="trsvg150" fill="#ef4444" font-weight="500" font-size="28px"><tspan id="trsvg49">glonass</tspan></text>
     </a>
    
   </g>
-  <g id="iridium" class="active" stroke="#660099" fill="#660099">
-   <path d="M 0,-71.8 H -80"/>
-   <ellipse cx="0" cy="0" rx="71.8" ry="71.8" fill="none"/>
+  <g id="iridium" class="active" stroke="#a855f7" fill="#a855f7" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+   <path d="M 0,-71.8 H -80" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="71.8" ry="71.8" fill="none" stroke-dasharray="2,2" opacity="0.7"/>
    <g class="rot_iri"><use xlink:href="#satellite" transform="translate(0,-71.8)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Iridium_satellite_constellation">
      
-     <text lang="en-US" x="-80" y="-71.8" id="trsvg154"><tspan id="trsvg53">iridium</tspan></text>
+     <text lang="en-US" x="-80" y="-71.8" id="trsvg154" fill="#a855f7" font-weight="500" font-size="28px"><tspan id="trsvg53">iridium</tspan></text>
     </a>
    
   </g>
-  <g id="iss" class="active" stroke="#ff00cc" fill="#ff00cc" text-anchor="start">
-   <path d="M 0,67.5 H 80"/>
-   <ellipse cx="0" cy="0" rx="67.5" ry="67.5" fill="none"/>
+  <g id="starlink" class="active" stroke="#60a5fa" fill="#60a5fa" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+   <path d="M 0,67.5 H -80" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="70" ry="70" fill="none" stroke-dasharray="2,2" opacity="0.9"/>
+   <g class="rot_sta"><use xlink:href="#satellite" transform="translate(0,70)"/></g>
+   
+    <a target="info" xlink:href="https://en.wikipedia.org/wiki/Starlink">
+     <text lang="en-US" x="-80" y="67.5" id="trsvg_starlink" fill="#60a5fa" font-weight="500" font-size="28px" text-anchor="end"><tspan id="trsvg_sta">starlink</tspan></text>
+    </a>
+   
+  </g>
+  <g id="iss" class="active" stroke="#ec4899" fill="#ec4899" text-anchor="start" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+   <path d="M 0,67.5 H 80" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="67.5" ry="67.5" fill="none" stroke-dasharray="2,2" opacity="0.7"/>
    <g class="rot_iss"><use xlink:href="#satellite" transform="translate(0,67.5)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/International_Space_Station">
      
-     <text lang="en-US" x="80" y="67.5" id="trsvg158"><tspan id="trsvg57">iss</tspan></text>
+     <text lang="en-US" x="80" y="67.5" id="trsvg158" fill="#ec4899" font-weight="500" font-size="28px"><tspan id="trsvg57">iss</tspan></text>
     </a>
    
   </g>
-  <g id="hst" class="active" stroke="#00cc00" fill="#00cc00" text-anchor="start">
-   <path d="M 0,-69.4 H 80"/>
-   <ellipse cx="0" cy="0" rx="69.4" ry="69.4" fill="none"/>
+  <g id="hst" class="active" stroke="#10b981" fill="#10b981" text-anchor="start" stroke-width="1.5" opacity="0.95" filter="url(#glow)">
+   <path d="M 0,-69.4 H 80" stroke-width="2"/>
+   <ellipse cx="0" cy="0" rx="69.4" ry="69.4" fill="none" stroke-dasharray="2,2" opacity="0.7"/>
    <g class="rot_hub"><use xlink:href="#satellite" transform="translate(0,-69.4)"/></g>
    
     <a target="info" xlink:href="https://en.wikipedia.org/wiki/Hubble_Space_Telescope">
-     <text lang="en-US" x="80" y="-69.4" id="trsvg162"><tspan id="trsvg61">hubble</tspan></text>
+     <text lang="en-US" x="80" y="-65" id="trsvg162" fill="#10b981" font-weight="500" font-size="28px"><tspan id="trsvg61">hubble</tspan></text>
     </a>
    
   </g>
@@ -188,13 +237,13 @@ a    { outline:none; }
     <use xlink:href="#mi" transform="translate(-161,0)"/>
     <use xlink:href="#mi" transform="translate(-322,0)"/>
     <use xlink:href="#mi" transform="translate(-483,0)"/>
-    <text lang="en-US" x="-115" y="-35" id="trsvg166" style="stroke:#cccccc;"><tspan id="trsvg65">10000 km</tspan></text>
-    <text lang="en-US" x="-215" y="-35" id="trsvg167" style="stroke:#cccccc;"><tspan id="trsvg66">20000</tspan></text>
-    <text lang="en-US" x="-310" y="-35" id="trsvg168" style="stroke:#cccccc;"><tspan id="trsvg67">30000</tspan></text>
-    <text lang="en-US" x="-432" y="-35" text-anchor="start" id="trsvg169" style="stroke:#cccccc;"><tspan id="trsvg68">40000</tspan></text>
-    <text lang="en-US" x="-160" y="55" id="trsvg170" style="stroke:#cccccc;"><tspan id="trsvg69">10000 mi</tspan></text>
-    <text lang="en-US" x="-330" y="55" id="trsvg171" style="stroke:#cccccc;"><tspan id="trsvg70">20000</tspan></text>
-     <text lang="en-US" x="-390" y="-90" font-weight="bold" text-anchor="start" id="trsvg172" style="stroke:#cccccc;"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
+    <text lang="en-US" x="-115" y="-35" id="trsvg166" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg65">10000 km</tspan></text>
+    <text lang="en-US" x="-215" y="-35" id="trsvg167" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg66">20000</tspan></text>
+    <text lang="en-US" x="-310" y="-35" id="trsvg168" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg67">30000</tspan></text>
+    <text lang="en-US" x="-432" y="-35" text-anchor="start" id="trsvg169" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg68">40000</tspan></text>
+    <text lang="en-US" x="-160" y="45" id="trsvg170" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg69">10000 mi</tspan></text>
+    <text lang="en-US" x="-330" y="45" id="trsvg171" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg70">20000</tspan></text>
+     <text lang="en-US" x="-390" y="-90" font-weight="600" text-anchor="start" id="trsvg172" fill="#cbd5e1" font-size="22px"><tspan id="trsvg71">radius</tspan><tspan x="-390" y="-70" id="trsvg72">of orbit</tspan></text>
    </g>
    <g class="active">
     <g transform="translate(64,0)">
@@ -206,13 +255,13 @@ a    { outline:none; }
      <use xlink:href="#mi"/>
      <use xlink:href="#mi" transform="translate(161,0)"/>
      <use xlink:href="#mi" transform="translate(322,0)"/>
-     <text lang="en-US" x="100" y="-35" id="trsvg176" style="stroke:#cccccc;"><tspan id="trsvg79">10000</tspan></text>
-     <text lang="en-US" x="190" y="-35" id="trsvg177" style="stroke:#cccccc;"><tspan id="trsvg80">20000</tspan></text>
-     <text lang="en-US" x="300" y="-35" id="trsvg178" style="stroke:#cccccc;"><tspan id="trsvg81">30000 km</tspan></text>
-     <text lang="en-US" x="150" y="55" id="trsvg179" style="stroke:#cccccc;"><tspan id="trsvg82">10000</tspan></text>
-     <text lang="en-US" x="300" y="55" id="trsvg180" style="stroke:#cccccc;"><tspan id="trsvg83">20000 mi</tspan></text>
+    <text lang="en-US" x="100" y="-35" id="trsvg176" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg79">10000</tspan></text>
+    <text lang="en-US" x="190" y="-35" id="trsvg177" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg80">20000</tspan></text>
+    <text lang="en-US" x="300" y="-35" id="trsvg178" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg81">30000 km</tspan></text>
+    <text lang="en-US" x="150" y="45" id="trsvg179" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg82">10000</tspan></text>
+    <text lang="en-US" x="300" y="45" id="trsvg180" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg83">20000 mi</tspan></text>
      
-      <text lang="en-US" x="345" y="-90" font-weight="bold" text-anchor="end" id="trsvg181" style="stroke:#cccccc;"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
+      <text lang="en-US" x="345" y="-90" font-weight="600" text-anchor="end" id="trsvg181" fill="#cbd5e1" font-size="22px"><tspan id="trsvg84">height above</tspan><tspan x="345" y="-70" id="trsvg85">sea level</tspan></text>
       <!--<text lang="en-US" x="345" y="-70" font-weight="bold" text-anchor="end" id="trsvg183"><tspan id="trsvg88">altitude</tspan></text>-->
      
     </g>
@@ -220,40 +269,41 @@ a    { outline:none; }
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,0 V -432 M 0,-51 H 10 M 0,-81 H 10 M 0,-106 H 10 M 0,-128 H 10 M 0,-149 H 20 M 0,-168 H 10 M 0,-186 H 10 M 0,-203 H 10 M 0,-220 H 10 M 0,-236 H 30 M 0,-251 H 10 M 0,-266 H 10 M 0,-281 H 10 M 0,-295 H 10 M 0,-309 H 20 M 0,-322 H 10 M 0,-336 H 10 M 0,-349 H 10 M 0,-362 H 10 M 0,-374 H 30 M 0,-387 H 10 M 0,-399 H 10 M 0,-411 H 10 M 0,-423 H 10"/>
      <g>
-      <text lang="en-US" x="-15" y="-350" font-weight="bold" text-anchor="end" id="trsvg185" style="stroke:#cccccc;"><tspan id="trsvg91">orbital period</tspan></text>
-      <text lang="en-US" x="30" y="-139" id="trsvg186" style="stroke:#cccccc;"><tspan id="trsvg92">5 hours</tspan></text>
-      <text lang="en-US" x="30" y="-221" id="trsvg187" style="stroke:#cccccc;"><tspan id="trsvg93">10 hours</tspan></text>
-      <text lang="en-US" x="30" y="-299" id="trsvg188" style="stroke:#cccccc;"><tspan id="trsvg94">15 hours</tspan></text>
-      <text lang="en-US" x="30" y="-364" id="trsvg189" style="stroke:#cccccc;"><tspan id="trsvg95">20 hours</tspan></text>
+      <text lang="en-US" x="-15" y="-350" font-weight="600" text-anchor="end" id="trsvg185" fill="#cbd5e1" font-size="22px"><tspan id="trsvg91">orbital period</tspan></text>
+      <text lang="en-US" x="30" y="-139" id="trsvg186" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg92">5 hours</tspan></text>
+      <text lang="en-US" x="30" y="-221" id="trsvg187" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg93">10 hours</tspan></text>
+      <text lang="en-US" x="30" y="-299" id="trsvg188" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg94">15 hours</tspan></text>
+      <text lang="en-US" x="30" y="-364" id="trsvg189" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg95">20 hours</tspan></text>
      </g>
    </g>
    <g class="active" text-anchor="start">
     <path class="rule" d="M 0,69 H -10 M 0,78 H -10 M 0,89 H -20 M 0,102 H -10 M 0,118 H -10 M 0,139 H -10 M 0,165 H -10 M 0,200 H -30 M 0,247 H -10 M 0,312 H -10 M 0,408 H -10 M 0,0 V 432 M 0,66 H 10 M 0,71 H 10 M 0,77 H 10 M 0,83 H 20 M 0,90 H 10 M 0,98 H 10 M 0,107 H 10 M 0,117 H 10 M 0,129 H 30 M 0,143 H 10 M 0,160 H 10 M 0,179 H 10 M 0,202 H 10 M 0,230 H 20 M 0,264 H 10 M 0,306 H 10 M 0,359 H 10 M 0,427 H 10"/>
-    <text lang="en-US" x="30" y="93" id="trsvg205" style="stroke:#cccccc;"><tspan id="trsvg111">25000 km/h</tspan></text>
-    <text lang="en-US" x="30" y="139" id="trsvg206" style="stroke:#cccccc;"><tspan id="trsvg112">20000 km/h</tspan></text>
-    <text lang="en-US" x="30" y="235" id="trsvg207" style="stroke:#cccccc;"><tspan id="trsvg113">15000 km/h</tspan></text>
-    <text lang="en-US" x="15" y="429" id="trsvg208" style="stroke:#cccccc;"><tspan id="trsvg114">11000 km/h</tspan></text>
-    <text lang="en-US" x="-30" y="99" text-anchor="end" id="trsvg209" style="stroke:#cccccc;"><tspan id="trsvg115">15000 mph</tspan></text>
-    <text lang="en-US" x="-30" y="210" text-anchor="end" id="trsvg210" style="stroke:#cccccc;"><tspan id="trsvg116">10000 mph</tspan></text>
-    <text lang="en-US" x="-15" y="415" text-anchor="end" id="trsvg211" style="stroke:#cccccc;"><tspan id="trsvg117">7000 mph</tspan></text>
+    <text lang="en-US" x="30" y="93" id="trsvg205" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg111">25000 km/h</tspan></text>
+    <text lang="en-US" x="30" y="139" id="trsvg206" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg112">20000 km/h</tspan></text>
+    <text lang="en-US" x="30" y="235" id="trsvg207" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg113">15000 km/h</tspan></text>
+    <text lang="en-US" x="15" y="429" id="trsvg208" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg114">11000 km/h</tspan></text>
+    <text lang="en-US" x="-30" y="99" text-anchor="end" id="trsvg209" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg115">15000 mph</tspan></text>
+    <text lang="en-US" x="-30" y="210" text-anchor="end" id="trsvg210" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg116">10000 mph</tspan></text>
+    <text lang="en-US" x="-15" y="415" text-anchor="end" id="trsvg211" fill="#94a3b8" font-weight="500" font-size="20px"><tspan id="trsvg117">7000 mph</tspan></text>
      <g>
-      <text lang="en-US" x="-15" y="350" font-weight="bold" text-anchor="end" id="trsvg215" style="stroke:#cccccc;"><tspan id="trsvg121">orbital speed</tspan></text>
+      <text lang="en-US" x="-15" y="350" font-weight="600" text-anchor="end" id="trsvg215" fill="#cbd5e1" font-size="22px"><tspan id="trsvg121">orbital speed</tspan></text>
      </g>
    </g>
    <g id="earth" class="nofade">
-    <ellipse cx="0" cy="0" rx="64.28" ry="64.28" fill="#0066ff" stroke="#66ccff"/>
+    <ellipse cx="0" cy="0" rx="64.28" ry="64.28" fill="url(#earth_atmosphere)"/>
+    <ellipse cx="0" cy="0" rx="64.28" ry="64.28" fill="url(#earth_gradient)" stroke="#4a9eff" stroke-width="1.5" opacity="0.9"/>
     <g class="rot_geo">
-     <path transform="scale(0.6378)" fill="#ffcc00" stroke="none" clip-path="url(#clip_earth)" d="M -15,-22 C -18,-28 -9,-20 -13,-28 -9,-30 -12,-31 -6,-34 -2,-36 -9,-35 -3,-43 2,-38 -6,-34 -2,-31 -3,-38 20,-31 8,-41 9,-53 12,-47 10,-42 20,-56 19,-43 23,-50 28,-50 21,-54 28,-55 28,-50 29,-43 35,-46 26,-54 36,-44 35,-56 51,-65 53,-49 59,-52 59,-62 62,-61 68,-59 69,-57 67,-46 74,-52 76,-58 70,-55 76,-63 79,-52 76,-58 75,-50 62,-41 76,-43 70,-40 62,-29 77,-29 80,-23 84,-25 99,-19 76,-11 77,1 71,-11 71,6 67,23 64,12 63,20 79,17 64,12 74,7 81,11 79,22 81,31 72,33 57,32 59,36 95,34 79,22 85,19 100,37 82,45 108,48 101,68 114,55 110,67 111,71 113,85 96,100 85,98 66,99 70,87 52,79 60,92 55,80 41,77 28,102 13,85 10,74 11,61 35,48 34,53 49,48 46,45 46,40 60,38 53,29 49,26 51,40 43,34 46,25 49,26 49,21 44,21 45,23 42,22 42,22 43,24 44,26 34,26 44,31 43,34 38,39 49,36 41,40 22,36 32,42 39,41 35,48 44,46 34,46 44,41 24,40 23,50 23,55 16,61 14,50 24,45 21,44 16,44 14,40 25,37 19,30 22,26 19,35 24,31 33,24 21,24 20,17 18,18 31,35 20,27 20,32 13,28 16,24 16,19 12,14 22,10 26,13 22,5 23,2 26,-2 12,-1 23,-3 16,-3 16,-8 10,-10 8,-14 14,-12 10,-15 7,-16 10,-22 3,-19 -7,-26 -6,-17 -15,-22  M -26,-30 C -28,-14 -24,-35 -15,-17 -16,-7 -24,-14 -22,-5 -28,8 -21,7 -18,3 -13,9 -29,11 -19,11 -23,18 -23,8 -24,16 -31,7 -36,12 -32,20 -36,22 -36,29 -31,22 -29,28 -25,9 -23,25 -20,31 -23,35 -22,42 -35,36 -11,39 -34,33 -22,37 -36,34 -28,40 -41,39 -29,38 -37,37 -41,39 -41,34 -46,39 -59,32 -56,43 -60,40 -60,35 -54,37 -62,29 -61,11 -87,28 -69,32 -64,42 -79,30 -71,43 -82,50 -70,50 -72,56 -56,58 -67,61 -53,71 -48,86 -42,78 -41,90 -38,96 -14,102 -19,107 -20,110 -30,110 -28,114 -32,121 -34,121 -51,117 -51,122 -67,125 -77,114 -66,127 -89,115 -93,112 -88,122 -105,106 -101,116 -116,108 -106,120 -105,122 -126,108 -124,92 -111,98 -104,88 -109,102 -86,84 -94,66 -87,70 -88,58 -81,53 -79,62 -74,57 -72,51 -74,52 -76,53 -80,40 -76,38 -77,29 -79,25 -79,10 -75,13 -74,10 -71,6 -66,1 -74,5 -73,7 -75,8 -74,-0 -64,0 -62,-6 -46,-15 -59,0 -31,-15 -24,-21 -30,-23 -26,-30  M 13,-141 C -15,-128 24,-122 23,-109 28,-109 25,-120 33,-114 40,-109 38,-108 33,-109 49,-99 48,-108 53,-103 73,-96 58,-108 81,-94 90,-96 82,-102 87,-107 73,-122 59,-116 44,-131 33,-133 42,-142 13,-141  M 12,-106 C 19,-102 27,-101 29,-97 42,-98 29,-95 40,-92 42,-100 25,-100 33,-104 30,-105 26,-108 21,-108 16,-103 19,-112 7,-111 2,-111 19,-107 12,-106  M 108,31 C 115,25 114,33 120,37 121,39 123,43 119,45 111,49 117,41 111,44 108,43 109,40 110,37 110,37 112,34 108,31  M 12,-52 C 11,-54 13,-57 15,-58 16,-61 21,-61 25,-56 23,-55 14,-60 13,-50 7,-48 7,-53 12,-52  M 43,-81 C 40,-73 48,-71 42,-69 44,-62 49,-69 48,-71 45,-77 59,-69 48,-76 53,-76 47,-83 43,-81  M 48,-86 C 50,-82 48,-86 55,-82 65,-82 58,-86 61,-85 62,-93 58,-81 56,-90 54,-89 59,-84 48,-86  M 55,-77 C 55,-72 57,-73 60,-72 63,-71 68,-71 71,-68 74,-74 67,-83 63,-81 53,-81 63,-76 55,-77  M -21,-3 C -22,-5 -13,-1 -15,-0 -14,7 -16,8 -18,-1 -21,2 -16,3 -22,5 -27,0 -22,0 -21,-3  M -43,-139 C -45,-139 -49,-137 -50,-139 -42,-142 -41,-150 -30,-148 -31,-145 -37,-147 -43,-139  M -42,-132 C -45,-129 -50,-134 -56,-131 -59,-127 -54,-142 -46,-136 -52,-133 -45,-134 -42,-132  M -15,10 C -16,17 -11,18 -21,24 -28,8 -19,23 -18,13 -21,7 -17,6 -15,10  M 12,36 C 11,29 13,33 17,36 23,38 16,39 15,42 14,35 15,37 12,36  M -52,-54 C -55,-50 -61,-47 -60,-50 -62,-54 -59,-48 -52,-54  M -8,14 C -17,10 -1,3 2,9 3,33 -10,22 -10,32 -18,30 -10,20 -8,14  M 42,-62 C 41,-59 38,-62 38,-60 38,-62 40,-63 42,-62  M 57,-56 C 54,-57 53,-59 53,-54 58,-54 56,-53 57,-56  M 24,-144 C 21,-145 15,-142 16,-145 22,-153 32,-137 24,-144  M 69,-84 C 75,-77 76,-75 80,-69 81,-74 72,-83 69,-84  M -61,53 C -57,56 -52,61 -54,57 -56,53 -60,50 -61,53  M 80,-69 C 78,-71 78,-49 81,-48 81,-53 85,-59 80,-69  M -66,38 C -62,36 -57,56 -60,50 -65,40 -60,45 -66,38  M 12,41 C 14,40 13,38 12,36 9,35 10,42 12,41  M 0,27 C 2,26 4,25 5,27 2,31 1,29 0,27  M -5,5 C -4,7 -14,12 -16,8 -15,5 -9,2 -5,5  M 88,-26 C 85,-28 86,-26 85,-23 90,-22 91,-25 88,-26  M 8,6 C 13,11 9,8 10,10 5,10 7,9 8,6  M 14,-2 C 17,-1 17,4 21,3 23,7 14,3 14,-2"/>
+     <path transform="scale(0.6378)" fill="#22c55e" stroke="none" clip-path="url(#clip_earth)" opacity="0.85" d="M -15,-22 C -18,-28 -9,-20 -13,-28 -9,-30 -12,-31 -6,-34 -2,-36 -9,-35 -3,-43 2,-38 -6,-34 -2,-31 -3,-38 20,-31 8,-41 9,-53 12,-47 10,-42 20,-56 19,-43 23,-50 28,-50 21,-54 28,-55 28,-50 29,-43 35,-46 26,-54 36,-44 35,-56 51,-65 53,-49 59,-52 59,-62 62,-61 68,-59 69,-57 67,-46 74,-52 76,-58 70,-55 76,-63 79,-52 76,-58 75,-50 62,-41 76,-43 70,-40 62,-29 77,-29 80,-23 84,-25 99,-19 76,-11 77,1 71,-11 71,6 67,23 64,12 63,20 79,17 64,12 74,7 81,11 79,22 81,31 72,33 57,32 59,36 95,34 79,22 85,19 100,37 82,45 108,48 101,68 114,55 110,67 111,71 113,85 96,100 85,98 66,99 70,87 52,79 60,92 55,80 41,77 28,102 13,85 10,74 11,61 35,48 34,53 49,48 46,45 46,40 60,38 53,29 49,26 51,40 43,34 46,25 49,26 49,21 44,21 45,23 42,22 42,22 43,24 44,26 34,26 44,31 43,34 38,39 49,36 41,40 22,36 32,42 39,41 35,48 44,46 34,46 44,41 24,40 23,50 23,55 16,61 14,50 24,45 21,44 16,44 14,40 25,37 19,30 22,26 19,35 24,31 33,24 21,24 20,17 18,18 31,35 20,27 20,32 13,28 16,24 16,19 12,14 22,10 26,13 22,5 23,2 26,-2 12,-1 23,-3 16,-3 16,-8 10,-10 8,-14 14,-12 10,-15 7,-16 10,-22 3,-19 -7,-26 -6,-17 -15,-22  M -26,-30 C -28,-14 -24,-35 -15,-17 -16,-7 -24,-14 -22,-5 -28,8 -21,7 -18,3 -13,9 -29,11 -19,11 -23,18 -23,8 -24,16 -31,7 -36,12 -32,20 -36,22 -36,29 -31,22 -29,28 -25,9 -23,25 -20,31 -23,35 -22,42 -35,36 -11,39 -34,33 -22,37 -36,34 -28,40 -41,39 -29,38 -37,37 -41,39 -41,34 -46,39 -59,32 -56,43 -60,40 -60,35 -54,37 -62,29 -61,11 -87,28 -69,32 -64,42 -79,30 -71,43 -82,50 -70,50 -72,56 -56,58 -67,61 -53,71 -48,86 -42,78 -41,90 -38,96 -14,102 -19,107 -20,110 -30,110 -28,114 -32,121 -34,121 -51,117 -51,122 -67,125 -77,114 -66,127 -89,115 -93,112 -88,122 -105,106 -101,116 -116,108 -106,120 -105,122 -126,108 -124,92 -111,98 -104,88 -109,102 -86,84 -94,66 -87,70 -88,58 -81,53 -79,62 -74,57 -72,51 -74,52 -76,53 -80,40 -76,38 -77,29 -79,25 -79,10 -75,13 -74,10 -71,6 -66,1 -74,5 -73,7 -75,8 -74,-0 -64,0 -62,-6 -46,-15 -59,0 -31,-15 -24,-21 -30,-23 -26,-30  M 13,-141 C -15,-128 24,-122 23,-109 28,-109 25,-120 33,-114 40,-109 38,-108 33,-109 49,-99 48,-108 53,-103 73,-96 58,-108 81,-94 90,-96 82,-102 87,-107 73,-122 59,-116 44,-131 33,-133 42,-142 13,-141  M 12,-106 C 19,-102 27,-101 29,-97 42,-98 29,-95 40,-92 42,-100 25,-100 33,-104 30,-105 26,-108 21,-108 16,-103 19,-112 7,-111 2,-111 19,-107 12,-106  M 108,31 C 115,25 114,33 120,37 121,39 123,43 119,45 111,49 117,41 111,44 108,43 109,40 110,37 110,37 112,34 108,31  M 12,-52 C 11,-54 13,-57 15,-58 16,-61 21,-61 25,-56 23,-55 14,-60 13,-50 7,-48 7,-53 12,-52  M 43,-81 C 40,-73 48,-71 42,-69 44,-62 49,-69 48,-71 45,-77 59,-69 48,-76 53,-76 47,-83 43,-81  M 48,-86 C 50,-82 48,-86 55,-82 65,-82 58,-86 61,-85 62,-93 58,-81 56,-90 54,-89 59,-84 48,-86  M 55,-77 C 55,-72 57,-73 60,-72 63,-71 68,-71 71,-68 74,-74 67,-83 63,-81 53,-81 63,-76 55,-77  M -21,-3 C -22,-5 -13,-1 -15,-0 -14,7 -16,8 -18,-1 -21,2 -16,3 -22,5 -27,0 -22,0 -21,-3  M -43,-139 C -45,-139 -49,-137 -50,-139 -42,-142 -41,-150 -30,-148 -31,-145 -37,-147 -43,-139  M -42,-132 C -45,-129 -50,-134 -56,-131 -59,-127 -54,-142 -46,-136 -52,-133 -45,-134 -42,-132  M -15,10 C -16,17 -11,18 -21,24 -28,8 -19,23 -18,13 -21,7 -17,6 -15,10  M 12,36 C 11,29 13,33 17,36 23,38 16,39 15,42 14,35 15,37 12,36  M -52,-54 C -55,-50 -61,-47 -60,-50 -62,-54 -59,-48 -52,-54  M -8,14 C -17,10 -1,3 2,9 3,33 -10,22 -10,32 -18,30 -10,20 -8,14  M 42,-62 C 41,-59 38,-62 38,-60 38,-62 40,-63 42,-62  M 57,-56 C 54,-57 53,-59 53,-54 58,-54 56,-53 57,-56  M 24,-144 C 21,-145 15,-142 16,-145 22,-153 32,-137 24,-144  M 69,-84 C 75,-77 76,-75 80,-69 81,-74 72,-83 69,-84  M -61,53 C -57,56 -52,61 -54,57 -56,53 -60,50 -61,53  M 80,-69 C 78,-71 78,-49 81,-48 81,-53 85,-59 80,-69  M -66,38 C -62,36 -57,56 -60,50 -65,40 -60,45 -66,38  M 12,41 C 14,40 13,38 12,36 9,35 10,42 12,41  M 0,27 C 2,26 4,25 5,27 2,31 1,29 0,27  M -5,5 C -4,7 -14,12 -16,8 -15,5 -9,2 -5,5  M 88,-26 C 85,-28 86,-26 85,-23 90,-22 91,-25 88,-26  M 8,6 C 13,11 9,8 10,10 5,10 7,9 8,6  M 14,-2 C 17,-1 17,4 21,3 23,7 14,3 14,-2"/>
     </g>
     <ellipse class="rot_sun" cx="0" cy="0" rx="63.78" ry="63.78" fill="url(#gradient_shade)"/>
    </g>
-   <g id="clock" class="nofade" transform="translate(360,360) scale(-1,1)" stroke-width="2" stroke="#999999">
+   <g id="clock" class="nofade" transform="translate(360,360) scale(-1,1)" stroke-width="2.5" stroke="#94a3b8" opacity="0.8">
     <use xlink:href="#tick_3"/>
     <use xlink:href="#tick_3" transform="rotate(90)"/>
     <use xlink:href="#tick_3" transform="rotate(180)"/>
     <use xlink:href="#tick_3" transform="rotate(270)"/>
-    <path class="rot_min" d="M 0,0 V -40"/>
-    <path class="rot_hr" d="M 0,0 V -20"/>
+    <path class="rot_min" d="M 0,0 V -40" stroke="#cbd5e1" stroke-width="2"/>
+    <path class="rot_hr" d="M 0,0 V -20" stroke="#cbd5e1" stroke-width="2.5"/>
    </g>
   </g>
  </g>
