@@ -11,54 +11,28 @@
 path, ellipse { pointer-events:none; }
 text { stroke:none; stroke-width:0.5px; font-weight:500; font-family:'Georgia', 'Times New Roman', serif; }
 a    { outline:none; }
-@keyframes         rot { from { transform:         rotate(360deg); }
-                         to   { transform:         rotate(0deg);   } }
-@-moz-keyframes    rot { from { -moz-transform:    rotate(360deg); }
-                         to   { -moz-transform:    rotate(0deg);   } }
-@-webkit-keyframes rot { from { -webkit-transform: rotate(360deg); }
-                         to   { -webkit-transform: rotate(0deg);   } }
-.rot_sun { animation:         rot 24s  linear infinite;
-           -moz-animation:    rot 24s  linear infinite;
-           -webkit-animation: rot 24s  linear infinite; }
-.rot_bg_shade { animation:         rot 24s  linear infinite;
-           -moz-animation:    rot 24s  linear infinite;
-           -webkit-animation: rot 24s  linear infinite; }
-.rot_gra { animation:         rot 24.19s linear infinite;
-           -moz-animation:    rot 24.19s linear infinite;
-           -webkit-animation: rot 24.19s linear infinite; }
-.rot_geo { animation:         rot 23.93s linear infinite;
-           -moz-animation:    rot 23.93s linear infinite;
-           -webkit-animation: rot 23.93s linear infinite; }
-.rot_gal { animation:         rot 14.37s linear infinite;
-           -moz-animation:    rot 14.37s linear infinite;
-           -webkit-animation: rot 14.37s linear infinite; }
-.rot_com { animation:         rot 12.62s linear infinite;
-           -moz-animation:    rot 12.62s linear infinite;
-           -webkit-animation: rot 12.62s linear infinite; }
-.rot_gps { animation:         rot 11.97s linear infinite;
-           -moz-animation:    rot 11.97s linear infinite;
-           -webkit-animation: rot 11.97s linear infinite; }
-.rot_glo { animation:         rot 11.25s linear infinite;
-           -moz-animation:    rot 11.25s linear infinite;
-           -webkit-animation: rot 11.25s linear infinite; }
-.rot_iri { animation:         rot  1.7s  linear infinite;
-           -moz-animation:    rot  1.7s  linear infinite;
-           -webkit-animation: rot  1.7s  linear infinite; }
-.rot_hub { animation:         rot  1.6s  linear infinite;
-           -moz-animation:    rot  1.6s  linear infinite;
-           -webkit-animation: rot  1.6s  linear infinite; }
-.rot_iss { animation:         rot  1.5s  linear infinite;
-           -moz-animation:    rot  1.5s  linear infinite;
-           -webkit-animation: rot  1.5s  linear infinite; }
-.rot_sta { animation:         rot  1.55s linear infinite;
-           -moz-animation:    rot  1.55s linear infinite;
-           -webkit-animation: rot  1.55s linear infinite; }
-.rot_min { animation:         rot  1s    linear infinite;
-           -moz-animation:    rot  1s    linear infinite;
-           -webkit-animation: rot  1s    linear infinite; }
-.rot_hr  { animation:         rot  12s   linear infinite;
-           -moz-animation:    rot  12s   linear infinite;
-           -webkit-animation: rot  12s   linear infinite; }
+@keyframes rot { 
+  from { transform: rotate(360deg) translateZ(0); }
+  to   { transform: rotate(0deg) translateZ(0); }
+}
+.rot_sun, .rot_bg_shade, .rot_gra, .rot_geo, .rot_gal, .rot_com, .rot_gps, .rot_glo, .rot_iri, .rot_hub, .rot_iss, .rot_sta, .rot_min, .rot_hr {
+  will-change: transform;
+  transform: translateZ(0);
+}
+.rot_sun { animation: rot 24s linear infinite; }
+.rot_bg_shade { animation: rot 24s linear infinite; }
+.rot_gra { animation: rot 24.19s linear infinite; }
+.rot_geo { animation: rot 23.93s linear infinite; }
+.rot_gal { animation: rot 14.37s linear infinite; }
+.rot_com { animation: rot 12.62s linear infinite; }
+.rot_gps { animation: rot 11.97s linear infinite; }
+.rot_glo { animation: rot 11.25s linear infinite; }
+.rot_iri { animation: rot 1.7s linear infinite; }
+.rot_hub { animation: rot 1.6s linear infinite; }
+.rot_iss { animation: rot 1.5s linear infinite; }
+.rot_sta { animation: rot 1.55s linear infinite; }
+.rot_min { animation: rot 1s linear infinite; }
+.rot_hr  { animation: rot 12s linear infinite; }
  </style>
  <defs>
   <radialGradient id="gradient_shade" cx="50%" cy="50%" r="67%" fx="33%" fy="33%">
